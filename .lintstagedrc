@@ -2,8 +2,7 @@
   "*.{js,jsx,ts,tsx}": [
     "prettier",
     "eslint",
-    "jest --findRelatedTests --bail",
-    "git add"
+    "jest --bail --findRelatedTests"
   ],
   "*.{html,css}": [
     "prettier"
