@@ -17,8 +17,8 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "@Components": ["src/Components"],
-      "@Pages": ["src/Pages"],
+      "@components": ["src/components"],
+      "@pages": ["src/pages"],
       "@enums": ["src/enums"],
       "@helpers": ["src/helpers"],
       "@utils": ["src/utils"],
