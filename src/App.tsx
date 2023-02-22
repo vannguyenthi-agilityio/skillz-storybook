@@ -9,7 +9,7 @@ function App() {
         <Box bg='gray.200' p='10px' borderRadius='50%'>
           N
         </Box>
-        <Text>ngocquang2509@gmail.com</Text>
+        <Text>Some text here</Text>
         <Button colorScheme='blue'>Logout</Button>
       </HStack>
     </Flex>
