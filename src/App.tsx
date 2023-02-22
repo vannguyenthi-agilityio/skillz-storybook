@@ -1,4 +1,4 @@
-// Libraries
+// Components
 import { Flex, Heading } from '@chakra-ui/react';
 
 function App() {
