@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing App It should render correctly 1`] = `
+<nav
+  className="css-xmie9l"
+>
+  <h1
+    className="chakra-heading css-0"
+  >
+    Logo
+  </h1>
+  <div
+    className="css-17xejub"
+  />
+  <div
+    className="chakra-stack css-1a38sz5"
+  >
+    <div
+      className="css-kgqs9l"
+    >
+      N
+    </div>
+    <p
+      className="chakra-text css-0"
+    >
+      ngocquang2509@gmail.com
+    </p>
+    <button
+      className="chakra-button css-4xx2wk"
+      type="button"
+    >
+      Logout
+    </button>
+  </div>
+</nav>
+`;
