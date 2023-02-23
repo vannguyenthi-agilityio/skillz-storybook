@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing App It should render correctly 1`] = `
+<nav
+  className="css-xmie9l"
+>
+  <h1
+    className="chakra-heading css-0"
+  >
+    Welcome, ISkillz
+  </h1>
+</nav>
+`;
