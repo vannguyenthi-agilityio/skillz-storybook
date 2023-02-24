@@ -5,7 +5,6 @@ import Select from './Select';
 export default {
   title: 'Components/Select',
   component: Select,
-  // argTypes: { onChange: { action: 'onChange' } },
 } as Meta;
 
 const mockOptions = [
