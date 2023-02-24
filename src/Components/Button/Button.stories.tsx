@@ -98,6 +98,15 @@ Examination.args = {
   leftIcon: <Image src={ASSETS.ICON_CHARITY} alt='Icon Charity'/>
 };
 
+export const SignIn = Template.bind({});
+SignIn.args = {  
+  size: 'default',
+  color: 'red.200',
+  bg: 'transparent',
+  label: 'Click to sign in',
+  leftIcon: <Image src={ASSETS.ICON_ARROW} alt='Icon Arrow'/>
+};
+
 export const IconAddOnly = Template.bind({});
 IconAddOnly.args = {
   bg: 'tranparent',
