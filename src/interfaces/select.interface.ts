@@ -4,7 +4,8 @@ export interface IOption {
 }
 
 export interface ISelect {
+  options: IOption[];
   label?: string;
   value: string;
-  options: IOption[];
+  onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
 }
