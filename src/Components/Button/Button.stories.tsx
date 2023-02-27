@@ -2,7 +2,7 @@ import Storybook from '@storybook/react';
 import { Image } from '@chakra-ui/react'
 
 // Constants
-import ASSETS from '../../../src/constants/assets';
+import ASSETS from '/src/constants/assets';
 
 // Components
 import Button from './index';
