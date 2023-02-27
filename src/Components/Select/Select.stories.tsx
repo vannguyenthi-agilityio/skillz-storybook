@@ -1,10 +1,16 @@
-import { ISelect } from '@interfaces/select.interface';
+//Libraries
 import { Meta, Story } from '@storybook/react/dist/ts3.9/client/preview/types-6-0';
-import Select from './Select';
+
+// Component
+import Select from '.';
+
+// Types
+import { ISelect } from '@interfaces/select.interface';
 
 export default {
   title: 'Components/Select',
   component: Select,
+  argTypes: { onChange: { action: 'onChange' } },
 } as Meta;
 
 const mockOptions = [
@@ -19,5 +25,9 @@ export const Default = Template.bind({});
 Default.args = {
   label: 'Select',
   options: mockOptions,
-  value: '2',
+};
+
+export const SelectWithoutLabel = Template.bind({});
+SelectWithoutLabel.args = {
+  options: mockOptions,
 };
