@@ -1,12 +1,15 @@
+import convertPxToRem from '@helpers/common';
+
 const borderRadius = {
-  'xs': '0.3125rem',
-  'sm': '0.4375rem',
-  'base': '0.5rem',
-  'md': '0.625rem',
-  'xl': '0.9375rem',
+  'xs': convertPxToRem(5),
+  'sm': convertPxToRem(7),
+  'base': convertPxToRem(8),
+  'md': convertPxToRem(10),
+  'xl': convertPxToRem(15),
+  '2xl': convertPxToRem(30),
   'full': '9999px',
   'none': '0',
-  'secondary': '0.625rem 0 0 0.625rem'
+  'secondary': `${convertPxToRem(10)}, 0 0 ${convertPxToRem(10)}`
 }
 
 export default borderRadius;

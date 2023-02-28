@@ -4,6 +4,30 @@ import {
   ButtonProps as ButtonPropsChakra
 } from '@chakra-ui/react';
 
+export enum SIZES {
+  default = 'default',
+  small = 'small',
+  smallExtra = 'smallExtra',
+  medium = 'medium',
+  base = 'base',
+  large = 'large',
+  largeExtra = 'largeExtra',
+  full = 'full'
+}
+
+export enum VARIANTS {
+  default = 'default',
+  medium = 'medium',
+  status = 'status',
+  transparent = 'transparent',
+  uppercase = 'uppercase',
+  noBorder = 'noBorder',
+  muted = 'muted',
+  action = 'action',
+  icon = 'icon',
+  selected = 'selected'
+}
+
 interface ButtonProps extends ButtonPropsChakra {
   children?: React.ReactNode;
   label?: string;
@@ -22,13 +46,13 @@ interface ButtonProps extends ButtonPropsChakra {
   /**
    * How large should the button be?
    */
-  size?: string;
-  variant?: string;
+  size?: SIZES;
+  variant?: VARIANTS;
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 const Button = ({
-  size = 'default',
+  size = SIZES.default,
   children,
   label = '',
   backgroundColor,
@@ -36,7 +60,7 @@ const Button = ({
   isDisabled = false,
   onClick,
   className = '',
-  variant = 'colorDefault',
+  variant = VARIANTS.default,
   ...props
 }: ButtonProps) => {
   return (

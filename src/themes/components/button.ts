@@ -1,31 +1,36 @@
+import convertPxToRem from '@helpers/common';
+
 const Button = {
   sizes: {
     default: {
-      px: '2rem',
-      py: '0.72rem',
-      minW: '7.5rem',
+      px: convertPxToRem(32),
+      py: convertPxToRem(12),
+      minW: convertPxToRem(120),
       fontWeight: 'normal'
     },
     medium: {
-      minW: '10.93rem',
+      minW: convertPxToRem(175),
       fontSize: 'md'
     },
     small: {
-      minW: '6.25rem'
+      minW: convertPxToRem(100)
     },
     smallExtra: {
-      px: '0.375rem',
-      py: '0.2rem',
-      minW: '5.9375rem'
+      px: convertPxToRem(6),
+      py: convertPxToRem(4),
+      minW: convertPxToRem(95)
     },
     base: {
-      minW: '7.5rem'
+      minW: convertPxToRem(120)
     },
     large: {
-      minW: '11.25rem'
+      minW: convertPxToRem(180)
     },
     largeExtra: {
-      minW: '17.5rem'
+      minW: convertPxToRem(280),
+      fontSize: 'md',
+      borderRadius: convertPxToRem(30),
+      boxShadow: 'xl'
     },
     full: {
       fontSize: 'md',
@@ -34,7 +39,7 @@ const Button = {
   },
 
   variants: {
-    colorDefault: {
+    default: {
       bg: 'primary.100',
       color: 'default.light'
     },
@@ -96,7 +101,7 @@ const Button = {
     px: '0.16rem',
     py: '0.58rem',
     fontSize: 'sm',
-    borderRadius: '0.4375rem',
+    borderRadius: convertPxToRem(7),
     _focus: {
       boxShadow: ''
     }
