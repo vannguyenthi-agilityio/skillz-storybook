@@ -101,7 +101,7 @@ const Button = {
     px: convertPxToRem(3),
     py: convertPxToRem(9),
     fontSize: 'sm',
-    borderRadius: 'md',
+    borderRadius: 'sm',
     _focus: {
       boxShadow: ''
     }
