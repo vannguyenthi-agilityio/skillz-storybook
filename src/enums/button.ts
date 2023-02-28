@@ -1,11 +1,11 @@
 export enum SIZES {
   default = 'default',
-  small = 'small',
-  smallExtra = 'smallExtra',
-  medium = 'medium',
+  xs = 'xs',
+  sm = 'sm',
+  md = 'md',
   base = 'base',
-  large = 'large',
-  largeExtra = 'largeExtra',
+  lg = 'lg',
+  lx = 'lx',
   full = 'full'
 }
 

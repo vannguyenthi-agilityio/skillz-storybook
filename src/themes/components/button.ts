@@ -8,14 +8,14 @@ const Button = {
       minW: convertPxToRem(120),
       fontWeight: 'normal'
     },
-    medium: {
+    md: {
       minW: convertPxToRem(175),
       fontSize: 'md'
     },
-    small: {
+    xs: {
       minW: convertPxToRem(100)
     },
-    smallExtra: {
+    sm: {
       px: convertPxToRem(6),
       py: convertPxToRem(4),
       minW: convertPxToRem(95)
@@ -23,10 +23,10 @@ const Button = {
     base: {
       minW: convertPxToRem(120)
     },
-    large: {
+    lg: {
       minW: convertPxToRem(180)
     },
-    largeExtra: {
+    lx: {
       minW: convertPxToRem(280),
       fontSize: 'md',
       borderRadius: '2xl',

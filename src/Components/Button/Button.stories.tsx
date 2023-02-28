@@ -3,7 +3,6 @@ import { Image } from '@chakra-ui/react'
 
 // Constants
 import { SIZES, VARIANTS } from '@enums/button';
-
 import ASSETS from '@constants/assets';
 
 // Components
@@ -35,7 +34,7 @@ Uppercase.args = {
 
 export const Incorrect = Template.bind({});
 Incorrect.args = {
-  size: SIZES.smallExtra,
+  size: SIZES.sm,
   color: 'default.light',
   label: 'Incorrect',
   bg: 'red.500',
@@ -45,7 +44,7 @@ Incorrect.args = {
 
 export const Correct = Template.bind({});
 Correct.args = {
-  size: SIZES.smallExtra,
+  size: SIZES.sm,
   color: 'grey.200',
   label: 'Correct',
   bg: 'transparent',
@@ -57,7 +56,7 @@ Correct.args = {
 
 export const WithIcon = Template.bind({});
 WithIcon.args = {  
-  size: SIZES.medium,
+  size: SIZES.md,
   color: 'default.light',
   bg: 'primary.100',
   label: 'Examination',

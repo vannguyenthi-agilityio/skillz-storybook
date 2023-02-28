@@ -102,7 +102,7 @@ describe('Button render', () => {
 
   it('should render with size, variant and className props', () => {
     const { container } = render(
-      <Button size={SIZES.medium} variant={VARIANTS.uppercase} className="custom-button" label='Button' data-testid='TestButton' />
+      <Button size={SIZES.md} variant={VARIANTS.uppercase} className="custom-button" label='Button' data-testid='TestButton' />
     );
 
     const button = container.querySelector('.custom-button');
