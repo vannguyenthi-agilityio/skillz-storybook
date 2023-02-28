@@ -5,7 +5,7 @@ export interface IOption {
   label: string;
 }
 
-export interface ISelect extends Pick<SelectProps, 'variant' | 'size' | 'isDisabled'> {
+export interface ISelect extends SelectProps {
   options: IOption[];
   label?: string;
   value: string;
