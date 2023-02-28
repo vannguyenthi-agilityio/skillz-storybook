@@ -3,7 +3,7 @@ import { Image } from '@chakra-ui/react'
 
 // Constants
 import { SIZES, VARIANTS } from '@enums/button';
-import ASSETS from '@constants/assets';
+import { ASSETS } from '@constants/assets';
 
 // Components
 import Button from './index';

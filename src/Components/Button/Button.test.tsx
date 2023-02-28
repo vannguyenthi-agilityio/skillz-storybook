@@ -3,19 +3,24 @@ import {
   fireEvent,
   render
 } from '@testing-library/react';
+import { Image } from '@chakra-ui/react'
 import * as renderer from 'react-test-renderer'
 import { expect } from '@jest/globals';
 import Button from './index';
 
+// Constants
+import { ASSETS } from '@constants/index';
+
 // Enums
-import { SIZES, VARIANTS } from '@enums/index';
+import { SIZES, VARIANTS, ICON_POSITION } from '@enums/index';
 
 describe('Button render', () => {
   afterEach(cleanup);
 
-  it('should render button component', () => {
+  it('should render button component with icon right', () => {
     const { getByTestId } = render(
-      <Button data-testid='TestButton' label='Button' onClick={() => {}} />
+      <Button data-testid='TestButton' label='Button' onClick={() => {}} positionIcon={ICON_POSITION.right}
+      icon={<Image src={ASSETS.ICON_CHARITY} alt='Icon Charity'/>} />
     );
 
     const button = getByTestId('TestButton');
@@ -35,7 +40,8 @@ describe('Button render', () => {
 
   describe("jest Snapshot testing", () => {
     it("matches Button Snapshot", () => {
-      const button = renderer.create(<Button label='Primary' />).toJSON();
+      const button = renderer.create(<Button label='Primary' positionIcon={ICON_POSITION.left}
+      icon={<Image src={ASSETS.ICON_CHARITY} alt='Icon Charity'/>} />).toJSON();
       expect(button).toMatchSnapshot();
     });
   });
