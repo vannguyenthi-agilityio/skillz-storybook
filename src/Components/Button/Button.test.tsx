@@ -3,6 +3,7 @@ import {
   fireEvent,
   render
 } from '@testing-library/react';
+import * as renderer from 'react-test-renderer'
 import { expect } from '@jest/globals';
 import Button from './index';
 
@@ -21,6 +22,24 @@ describe('Button render', () => {
 
     const button = getByTestId('TestButton');
     expect(button).toBeTruthy();
+  });
+
+  describe('should create Button', () => {
+    it('renders the Button content text', () => {
+      const rendered = render(
+        <Button label="Primary" />
+      );
+      const { container } = rendered;
+  
+      expect(container.textContent).toEqual('Primary');
+    });
+  });
+
+  describe("jest Snapshot testing", () => {
+    it("matches Button Snapshot", () => {
+      const button = renderer.create(<Button label='Primary' />).toJSON();
+      expect(button).toMatchSnapshot();
+    });
   });
 
   it('should simulate click and expect mock to call', () => {
