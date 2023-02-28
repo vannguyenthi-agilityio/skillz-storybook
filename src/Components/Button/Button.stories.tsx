@@ -61,7 +61,8 @@ WithIcon.args = {
   bg: 'primary.100',
   label: 'Examination',
   fontWeight: 'normal',
-  leftIcon: <Image src={ASSETS.ICON_CHARITY} alt='Icon Charity'/>
+  positionIcon: 'left',
+  icon: <Image src={ASSETS.ICON_CHARITY} alt='Icon Charity' />
 };
 
 export const IconAddOnly = Template.bind({});
@@ -69,7 +70,8 @@ IconAddOnly.args = {
   bg: 'tranparent',
   variant: VARIANTS.icon,
   label: '',
-  leftIcon: <Image src={ASSETS.ICON_ADD} alt='Icon Add'/>
+  positionIcon: 'left',
+  icon: <Image src={ASSETS.ICON_ADD} alt='Icon Add'/>
 };
 
 export const IconEditOnly = Template.bind({});
@@ -77,7 +79,8 @@ IconEditOnly.args = {
   bg: 'tranparent',
   variant: VARIANTS.icon,
   label: '',
-  leftIcon: <Image src={ASSETS.ICON_EDIT} alt='Icon Edit'/>
+  positionIcon: 'left',
+  icon: <Image src={ASSETS.ICON_EDIT} alt='Icon Edit'/>
 };
 
 export const OrangeMask = Template.bind({});
@@ -88,7 +91,8 @@ OrangeMask.args = {
   bg: 'orange.300',
   label: 'MetaMask',
   fontWeight: 'normal',
-  leftIcon: <Image src={ASSETS.ICON_MASK} alt='Icon MetaMask'/>
+  positionIcon: 'left',
+  icon: <Image src={ASSETS.ICON_MASK} alt='Icon MetaMask' />
 };
 export const MaskFull = Template.bind({});
 MaskFull.args = {  
@@ -98,7 +102,8 @@ MaskFull.args = {
   bg: 'orange.300',
   label: 'Connect MetaMask',
   fontWeight: 'normal',
-  leftIcon: <Image src={ASSETS.ICON_MASK} alt='Icon MetaMask'/>
+  positionIcon: 'left',
+  icon: <Image src={ASSETS.ICON_MASK} alt='Icon MetaMask'/>
 };
 
 export const Loading = Template.bind({});

@@ -56,7 +56,7 @@ describe('Button render', () => {
     it('will call onClick when enabled', () => {
       const onClick = jest.fn();
       const { getByTestId } = render(
-        <Button data-testid='TestButton' label='Button' onClick={onClick} disabled={false}/>
+        <Button data-testid='TestButton' label='Button' onClick={onClick} isDisabled={false}/>
       );
   
       const button = getByTestId('TestButton');
@@ -101,11 +101,11 @@ describe('Button render', () => {
   })
 
   it('should render with size, variant and className props', () => {
-    const { container } = render(
-      <Button size={SIZES.md} variant={VARIANTS.uppercase} className="custom-button" label='Button' data-testid='TestButton' />
+    const { getByTestId } = render(
+      <Button data-testid='TestButton' size={SIZES.md} variant={VARIANTS.uppercase} className="custom-button" label='Button' />
     );
 
-    const button = container.querySelector('.custom-button');
+    const button = getByTestId('TestButton');
     expect(button).toBeTruthy();
   });
 });

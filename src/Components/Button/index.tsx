@@ -3,7 +3,10 @@ import {
   Button as ButtonChakra,
   ButtonProps as ButtonPropsChakra
 } from '@chakra-ui/react';
-import { SIZES, VARIANTS } from '@enums/button';
+import { SIZES, VARIANTS, ICON_POSITION } from '@enums/button';
+
+// Styles
+import styles from './Button.module.css';
 
 interface ButtonProps extends ButtonPropsChakra {
   children?: React.ReactNode;
@@ -11,7 +14,8 @@ interface ButtonProps extends ButtonPropsChakra {
   className?: string;
   isLoading?: boolean;
   isDisabled?: boolean;
-  leftIcon?: React.ReactElement<any, string>;
+  icon?: React.ReactElement<any, string>;
+  positionIcon?: ICON_POSITION;
   /**
    * Is this the principal call to action on the page?
    */
@@ -33,7 +37,8 @@ const Button = ({
   children,
   label = '',
   backgroundColor,
-  leftIcon,
+  icon,
+  positionIcon = ICON_POSITION.left,
   isDisabled = false,
   onClick,
   className = '',
@@ -47,12 +52,12 @@ const Button = ({
       variant={variant}
       backgroundColor={backgroundColor}
       isDisabled={isDisabled}
-      leftIcon={leftIcon}
-      className={[className].join('')}
-      sx={{ '.chakra-button__icon': { marginRight: '0.75rem' } }}
+      className={[styles[className], icon ? styles[`has-icon-${positionIcon}`] : ''].join('')}
       {...props}
     >
+      {positionIcon === 'left' && icon }
       {label}
+      {positionIcon === 'right' && icon }
       {children}
     </ButtonChakra>
   );

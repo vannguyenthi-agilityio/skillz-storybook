@@ -21,3 +21,8 @@ export enum VARIANTS {
   icon = 'icon',
   selected = 'selected'
 }
+
+export enum ICON_POSITION {
+  left = 'left',
+  right = 'right'
+}
