@@ -5,7 +5,7 @@ import fontSizes from './fontSizes';
 import fonts from './fonts';
 import lineHeights from './lineHeights';
 import fontWeights from './fontWeights';
-import borderRadius from './borderRadius';
+import radius from './radius';
 import Button from './components/button';
 
 const overrides = {
@@ -18,7 +18,7 @@ const overrides = {
   fontSizes,
   lineHeights,
   fontWeights,
-  borderRadius
+  radius
 };
 
 const CHAKRA_THEME = extendTheme(overrides);

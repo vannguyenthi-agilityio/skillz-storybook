@@ -20,6 +20,7 @@
       "@components": ["src/components"],
       "@pages": ["src/pages"],
       "@enums": ["src/enums"],
+      "@constants": ["src/constants"],
       "@helpers": ["src/helpers"],
       "@utils": ["src/utils"],
       "@assets": ["src/assets"],

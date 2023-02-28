@@ -29,7 +29,7 @@ const Button = {
     largeExtra: {
       minW: convertPxToRem(280),
       fontSize: 'md',
-      borderRadius: convertPxToRem(30),
+      borderRadius: '2xl',
       boxShadow: 'xl'
     },
     full: {
@@ -98,10 +98,10 @@ const Button = {
     }
   },
   baseStyle: {
-    px: '0.16rem',
-    py: '0.58rem',
+    px: convertPxToRem(3),
+    py: convertPxToRem(9),
     fontSize: 'sm',
-    borderRadius: convertPxToRem(7),
+    borderRadius: 'md',
     _focus: {
       boxShadow: ''
     }

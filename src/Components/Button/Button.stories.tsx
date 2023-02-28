@@ -2,7 +2,9 @@ import Storybook from '@storybook/react';
 import { Image } from '@chakra-ui/react'
 
 // Constants
-import ASSETS from '/src/constants/assets';
+import { SIZES, VARIANTS } from '@enums/button';
+
+import ASSETS from '@constants/assets';
 
 // Components
 import Button from './index';
@@ -22,75 +24,75 @@ const Template: Storybook.ComponentStory<typeof Button> = args => (
 
 export const Default = Template.bind({});
 Default.args = {
-  size: 'default',
+  size: SIZES.default,
   color: 'default.light',
   bg: 'primary.100'
 };
 
 export const Leave = Template.bind({});
 Leave.args = {
-  size: 'default',
+  size: SIZES.default,
   color: 'default.light',
   label: 'Leave',
   bg: 'red.300',
   fontWeight: 'bold',
-  variant: 'uppercase',
+  variant: VARIANTS.uppercase,
 };
 
 export const Incorrect = Template.bind({});
 Incorrect.args = {
-  size: 'smallExtra',
+  size: SIZES.smallExtra,
   color: 'default.light',
   label: 'Incorrect',
   bg: 'red.500',
   fontWeight: 'bold',
-  variant: 'uppercase',
+  variant: VARIANTS.uppercase,
 };
 
 export const Correct = Template.bind({});
 Correct.args = {
-  size: 'smallExtra',
+  size: SIZES.smallExtra,
   color: 'grey.200',
   label: 'Correct',
   bg: 'transparent',
   fontWeight: 'bold',
   border: '1px solid',
   borderColor: 'grey.200',
-  variant: 'uppercase',
+  variant: VARIANTS.uppercase,
 };
 
 export const Next = Template.bind({});
 Next.args = {
-  size: 'default',
+  size: SIZES.default,
   color: 'default.light',
   label: 'Next',
   bg: 'primary.100',
   fontWeight: 'bold',
-  variant: 'uppercase',
+  variant: VARIANTS.uppercase,
 };
 
 export const Continue = Template.bind({});
 Continue.args = {
-  size: 'default',
+  size: SIZES.default,
   color: 'default.light',
   label: 'Continue',
   bg: 'primary.100',
-  variant: 'uppercase',
+  variant: VARIANTS.uppercase,
 };
 
 export const Back = Template.bind({});
 Back.args = {
-  size: 'default',
+  size: SIZES.default,
   color: 'default.light',
   label: 'Back',
   bg: 'grey.100',
   fontWeight: 'bold',
-  variant: 'uppercase',
+  variant: VARIANTS.uppercase,
 };
 
 export const Examination = Template.bind({});
 Examination.args = {  
-  size: 'medium',
+  size: SIZES.medium,
   color: 'default.light',
   bg: 'primary.100',
   label: 'Examination',
@@ -100,7 +102,7 @@ Examination.args = {
 
 export const SignIn = Template.bind({});
 SignIn.args = {  
-  size: 'default',
+  size: SIZES.default,
   color: 'red.200',
   bg: 'transparent',
   label: 'Click to sign in',
@@ -110,7 +112,7 @@ SignIn.args = {
 export const IconAddOnly = Template.bind({});
 IconAddOnly.args = {
   bg: 'tranparent',
-  variant: 'icon',
+  variant: VARIANTS.icon,
   label: '',
   leftIcon: <Image src={ASSETS.ICON_ADD} alt='Icon Add'/>
 };
@@ -118,15 +120,15 @@ IconAddOnly.args = {
 export const IconEditOnly = Template.bind({});
 IconEditOnly.args = {
   bg: 'tranparent',
-  variant: 'icon',
+  variant: VARIANTS.icon,
   label: '',
   leftIcon: <Image src={ASSETS.ICON_EDIT} alt='Icon Edit'/>
 };
 
 export const Mask = Template.bind({});
 Mask.args = {  
-  size: 'medium',
-  variant: 'medium',
+  size: SIZES.default,
+  variant: VARIANTS.medium,
   color: 'default.light',
   bg: 'orange.300',
   label: 'MetaMask',
@@ -136,8 +138,8 @@ Mask.args = {
 
 export const MaskConnect = Template.bind({});
 MaskConnect.args = {  
-  size: 'largeExtra',
-  variant: 'medium',
+  size: SIZES.largeExtra,
+  variant: VARIANTS.medium,
   color: 'default.light',
   bg: 'orange.300',
   label: 'Connect MetaMask',
@@ -147,8 +149,8 @@ MaskConnect.args = {
 
 export const MaskFull = Template.bind({});
 MaskFull.args = {  
-  size: 'full',
-  variant: 'medium',
+  size: SIZES.full,
+  variant: VARIANTS.medium,
   color: 'default.light',
   bg: 'orange.300',
   label: 'Connect MetaMask',
