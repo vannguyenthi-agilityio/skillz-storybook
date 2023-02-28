@@ -11,12 +11,12 @@ const mockOptions = [
 ];
 
 describe('Select render', () => {
-  test('should render select comnponent', () => {
+  test('match with snapshot', () => {
     render(<Select options={mockOptions} value={mockOptions[0].value} label='Select' onChange={() => {}} />);
 
     const select = screen.getByTestId('select');
 
-    expect(select).toBeInTheDocument();
+    expect(select).toMatchSnapshot();
   });
 
   test('should render without label', () => {
@@ -24,7 +24,7 @@ describe('Select render', () => {
 
     const select = screen.queryByText('Select');
 
-    expect(select).toBeNull();
+    expect(select).toBeFalsy();
   });
 
   test('should simulate onChange event', () => {
