@@ -1,4 +1,4 @@
-//Libraries
+// Libraries
 import { Meta, Story } from '@storybook/react/dist/ts3.9/client/preview/types-6-0';
 
 // Component
@@ -10,7 +10,25 @@ import { ISelect } from '@interfaces/select.interface';
 export default {
   title: 'Components/Select',
   component: Select,
-  argTypes: { onChange: { action: 'onChange' } },
+  argTypes: {
+    onChange: { action: 'onChange' },
+    label: { type: 'string' },
+    variant: {
+      options: ['outline', 'filled', 'flushed', 'unstyled'],
+      control: {
+        type: 'inline-radio',
+      },
+      defaultValue: 'outline',
+    },
+    size: {
+      options: ['lg', 'md', 'sm', 'xs'],
+      control: {
+        type: 'inline-radio',
+      },
+      defaultValue: 'md',
+    },
+    isDisabled: { type: 'boolean', defaultValue: false },
+  },
 } as Meta;
 
 const mockOptions = [
@@ -27,7 +45,35 @@ Default.args = {
   options: mockOptions,
 };
 
-export const SelectWithoutLabel = Template.bind({});
-SelectWithoutLabel.args = {
+export const WithoutLabel = Template.bind({});
+WithoutLabel.args = {
   options: mockOptions,
+};
+
+export const Large = Template.bind({});
+Large.args = {
+  options: mockOptions,
+  label: 'Large',
+  size: 'lg',
+};
+
+export const Medium = Template.bind({});
+Medium.args = {
+  options: mockOptions,
+  label: 'Medium',
+  size: 'md',
+};
+
+export const Small = Template.bind({});
+Small.args = {
+  options: mockOptions,
+  label: 'Small',
+  size: 'sm',
+};
+
+export const Disable = Template.bind({});
+Disable.args = {
+  options: mockOptions,
+  label: 'Disable',
+  isDisabled: true,
 };
