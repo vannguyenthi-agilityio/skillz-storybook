@@ -7,10 +7,8 @@ import * as renderer from 'react-test-renderer'
 import { expect } from '@jest/globals';
 import Button from './index';
 
-// Constants
-import ASSETS from '@constants/assets';
 // Enums
-import { SIZES, VARIANTS } from '@enums/button';
+import { SIZES, VARIANTS } from '@enums/index';
 
 describe('Button render', () => {
   afterEach(cleanup);
@@ -102,12 +100,12 @@ describe('Button render', () => {
     });
   })
 
-  it('should render with size and className prop', () => {
+  it('should render with size, variant and className props', () => {
     const { container } = render(
-      <Button size={SIZES.medium} className="chakra-button" label='Button' data-testid='TestButton' />
+      <Button size={SIZES.medium} variant={VARIANTS.uppercase} className="custom-button" label='Button' data-testid='TestButton' />
     );
 
-    const button = container.querySelector('.chakra-button');
+    const button = container.querySelector('.custom-button');
     expect(button).toBeTruthy();
   });
 });
