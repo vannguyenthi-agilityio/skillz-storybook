@@ -101,10 +101,22 @@ const Button = {
     px: convertPxToRem(3),
     py: convertPxToRem(9),
     fontSize: 'sm',
+    color: 'default.light',
     borderRadius: 'sm',
+    background: 'primary.100',
     _focus: {
       boxShadow: ''
-    }
+    },
+    _disabled: {
+      opacity: 0.4,
+      cursor: 'not-allowed',
+      boxShadow: 'none',
+    },
+    _hover: {
+      _disabled: {
+        bg: 'grey.100',
+      },
+    },
   }
 };
 

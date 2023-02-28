@@ -5,7 +5,7 @@ export default {
   moduleNameMapper: {
     '^@Components': '<rootDir>/src/Components',
     '^@Pages': '<rootDir>/src/Pages',
-    '^@enums': '<rootDir>/src/enums',
+    '^@enums/button': '<rootDir>/src/enums/button',
     '^@helpers': '<rootDir>/src/helpers',
     '^@utils': '<rootDir>/src/utils',
     '^@assets': '<rootDir>/src/assets',

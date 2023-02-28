@@ -24,19 +24,13 @@ const Template: Storybook.ComponentStory<typeof Button> = args => (
 
 export const Default = Template.bind({});
 Default.args = {
-  size: SIZES.default,
-  color: 'default.light',
-  bg: 'primary.100'
+  size: SIZES.default
 };
 
-export const Leave = Template.bind({});
-Leave.args = {
-  size: SIZES.default,
-  color: 'default.light',
-  label: 'Leave',
-  bg: 'red.300',
-  fontWeight: 'bold',
+export const Uppercase = Template.bind({});
+Uppercase.args = {
   variant: VARIANTS.uppercase,
+  size: SIZES.default
 };
 
 export const Incorrect = Template.bind({});
@@ -61,52 +55,14 @@ Correct.args = {
   variant: VARIANTS.uppercase,
 };
 
-export const Next = Template.bind({});
-Next.args = {
-  size: SIZES.default,
-  color: 'default.light',
-  label: 'Next',
-  bg: 'primary.100',
-  fontWeight: 'bold',
-  variant: VARIANTS.uppercase,
-};
-
-export const Continue = Template.bind({});
-Continue.args = {
-  size: SIZES.default,
-  color: 'default.light',
-  label: 'Continue',
-  bg: 'primary.100',
-  variant: VARIANTS.uppercase,
-};
-
-export const Back = Template.bind({});
-Back.args = {
-  size: SIZES.default,
-  color: 'default.light',
-  label: 'Back',
-  bg: 'grey.100',
-  fontWeight: 'bold',
-  variant: VARIANTS.uppercase,
-};
-
-export const Examination = Template.bind({});
-Examination.args = {  
+export const WithIcon = Template.bind({});
+WithIcon.args = {  
   size: SIZES.medium,
   color: 'default.light',
   bg: 'primary.100',
   label: 'Examination',
   fontWeight: 'normal',
   leftIcon: <Image src={ASSETS.ICON_CHARITY} alt='Icon Charity'/>
-};
-
-export const SignIn = Template.bind({});
-SignIn.args = {  
-  size: SIZES.default,
-  color: 'red.200',
-  bg: 'transparent',
-  label: 'Click to sign in',
-  leftIcon: <Image src={ASSETS.ICON_ARROW} alt='Icon Arrow'/>
 };
 
 export const IconAddOnly = Template.bind({});
@@ -125,8 +81,8 @@ IconEditOnly.args = {
   leftIcon: <Image src={ASSETS.ICON_EDIT} alt='Icon Edit'/>
 };
 
-export const Mask = Template.bind({});
-Mask.args = {  
+export const OrangeMask = Template.bind({});
+OrangeMask.args = {  
   size: SIZES.default,
   variant: VARIANTS.medium,
   color: 'default.light',
@@ -135,18 +91,6 @@ Mask.args = {
   fontWeight: 'normal',
   leftIcon: <Image src={ASSETS.ICON_MASK} alt='Icon MetaMask'/>
 };
-
-export const MaskConnect = Template.bind({});
-MaskConnect.args = {  
-  size: SIZES.largeExtra,
-  variant: VARIANTS.medium,
-  color: 'default.light',
-  bg: 'orange.300',
-  label: 'Connect MetaMask',
-  fontWeight: 'normal',
-  leftIcon: <Image src={ASSETS.ICON_MASK} alt='Icon MetaMask'/>
-};
-
 export const MaskFull = Template.bind({});
 MaskFull.args = {  
   size: SIZES.full,
@@ -156,4 +100,18 @@ MaskFull.args = {
   label: 'Connect MetaMask',
   fontWeight: 'normal',
   leftIcon: <Image src={ASSETS.ICON_MASK} alt='Icon MetaMask'/>
+};
+
+export const Loading = Template.bind({});
+Loading.args = {
+  size: SIZES.default,
+  label: 'Loading',
+  isLoading: true
+};
+
+export const Disabled = Template.bind({});
+Disabled.args = {
+  size:  SIZES.default,
+  label: 'Disabled',
+  isDisabled: true
 };
