@@ -1,5 +1,6 @@
 // Libraries
 import { Meta, Story } from '@storybook/react/dist/ts3.9/client/preview/types-6-0';
+import { Title, Subtitle, Description, Primary, ArgsTable, Stories, PRIMARY_STORY } from '@storybook/addon-docs';
 
 // Component
 import Select from '.';
@@ -28,6 +29,20 @@ export default {
       defaultValue: 'md',
     },
     isDisabled: { type: 'boolean', defaultValue: false },
+  },
+  parameters: {
+    docs: {
+      page: () => (
+        <>
+          <Title>Select component</Title>
+          <Subtitle>Usage</Subtitle>
+          <Description markdown="`import Select from '@component/Select'`" />
+          <Primary />
+          <ArgsTable story={PRIMARY_STORY} />
+          <Stories />
+        </>
+      ),
+    },
   },
 } as Meta;
 

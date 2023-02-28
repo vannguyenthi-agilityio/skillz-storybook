@@ -8,7 +8,7 @@ const Select = ({ options, label, value, onChange, ...rest }: ISelect) => {
   return (
     <label>
       <Text mb={2}>{label}</Text>
-      <ChakraSelect onChange={onChange} value={value} {...rest} data-testid='select' colorScheme='blue'>
+      <ChakraSelect onChange={onChange} value={value} {...rest} data-testid='select'>
         {options.map((option) => (
           <option key={option.value} value={option.value}>
             {option.label}
