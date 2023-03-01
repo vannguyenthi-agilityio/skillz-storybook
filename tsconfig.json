@@ -20,6 +20,7 @@
       "@components": ["src/components"],
       "@pages": ["src/pages"],
       "@enums": ["src/enums"],
+      "@constants": ["src/constants"],
       "@helpers": ["src/helpers"],
       "@utils": ["src/utils"],
       "@assets": ["src/assets"],
@@ -27,5 +28,6 @@
     }
   },
   "include": ["**/*.ts", "**/*.tsx", "src/helpers/.gitkeep", "src/utils/.gitkeep"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "esModuleInterop": true
 }
