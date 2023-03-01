@@ -3,6 +3,7 @@ import { Meta, Story } from '@storybook/react/dist/ts3.9/client/preview/types-6-
 
 // Component
 import Select from '.';
+import SelectComponent from './Select.code';
 
 // Types
 import { ISelect } from '@interfaces/select.interface';
@@ -31,8 +32,8 @@ export default {
   },
   parameters: {
     componentSource: {
-      code: 'export default "This is my code"',
-      language: 'javascript',
+      code: SelectComponent,
+      language: 'typescript',
     },
   },
 } as Meta;

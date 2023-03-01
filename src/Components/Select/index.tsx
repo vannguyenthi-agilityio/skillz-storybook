@@ -4,7 +4,7 @@ import { Select as ChakraSelect, Text } from '@chakra-ui/react';
 //Types
 import { ISelect } from '@interfaces/select.interface';
 
-const Select = ({ options, label, value, onChange, ...rest }: ISelect) => {
+export const Select = ({ options, label, value, onChange, ...rest }: ISelect) => {
   return (
     <label>
       <Text mb={2}>{label}</Text>
