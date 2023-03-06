@@ -1,10 +1,10 @@
 const lineHeights = {
-  'xs': '0.875rem',
-  'sm': '1rem',
-  'base': '1.0265rem',
-  'md': '1.25rem',
-  'lg': '1.3125rem',
-  'xl': '1.5rem',
+  xs: '0.875rem',
+  sm: '1rem',
+  base: '1.0265rem',
+  md: '1.25rem',
+  lg: '1.3125rem',
+  xl: '1.5rem',
   '2xl': '1.5625rem',
   '3xl': '1.625rem',
   '4xl': '1.75rem',
@@ -13,4 +13,4 @@ const lineHeights = {
   '7xl': '3rem'
 };
 
-export default lineHeights
+export default lineHeights;

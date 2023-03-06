@@ -1,123 +1,39 @@
+// Helpers
 import convertPxToRem from '@helpers/common';
 
-const Button = {
+export const ButtonVariants = {
+  baseStyle: {
+    borderRadius: '8px',
+    fontWeights: '400',
+    fontStyle: 'normal',
+    lineHeight: '2rem'
+  },
   sizes: {
-    default: {
-      px: convertPxToRem(32),
-      py: convertPxToRem(12),
-      minW: convertPxToRem(120),
-      fontWeight: 'normal'
+    sm: {
+      //TODO: Add small size if has any
     },
     md: {
-      minW: convertPxToRem(175),
-      fontSize: 'md'
-    },
-    xs: {
-      minW: convertPxToRem(100)
-    },
-    sm: {
-      px: convertPxToRem(6),
-      py: convertPxToRem(4),
-      minW: convertPxToRem(95)
-    },
-    base: {
-      minW: convertPxToRem(120)
+      px: `${convertPxToRem(24)}`,
+      py: `${convertPxToRem(12)}`
     },
     lg: {
-      minW: convertPxToRem(180)
-    },
-    lx: {
-      minW: convertPxToRem(280),
-      fontSize: 'md',
-      borderRadius: '2xl',
-      boxShadow: 'xl'
-    },
-    full: {
-      fontSize: 'md',
-      w: '100%'
+      //TODO: Add large size if has any
     }
   },
-
   variants: {
-    default: {
-      bg: 'primary.100',
-      color: 'default.light'
-    },
-
-    status: {
-      bg: 'green.200',
-    },
-
-    transparent: {
-      bg: 'transparent'
-    },
-
-    uppercase: {
-      textTransform: 'uppercase'
-    },
-
-    noBorder: {
-      border: 'none',
-      px: '0'
-    },
-
-    muted: {
-      bg: 'primary.200',
-      color: 'default.light'
-    },
-
-    action: {
-      p: '0',
-      bg: 'default.gray'
-    },
-
-    icon: {
-      border: 'none',
-      px: '0',
-      minW: 'auto',
-      _hover: {
-        background: 'transparent'
-      },
-    },
-
-    selected: {
-      background: 'primary.200',
-      _hover: {
-        background: 'primary.300',
-        opacity: 1
+    solid: {
+      _disabled: {
+        outline: 'none !important'
       },
       _active: {
-        background: 'primary.400'
+        outline: 'solid 1px #FFF',
+        outlineOffset: -3
       }
-    },
-
-    medium: {
-      _hover: {
-        background: 'orange.200'
-      },
     }
   },
-  baseStyle: {
-    px: convertPxToRem(3),
-    py: convertPxToRem(9),
-    fontSize: 'sm',
-    color: 'default.light',
-    borderRadius: 'sm',
-    background: 'primary.100',
-    _focus: {
-      boxShadow: ''
-    },
-    _disabled: {
-      opacity: 0.4,
-      cursor: 'not-allowed',
-      boxShadow: 'none',
-    },
-    _hover: {
-      _disabled: {
-        bg: 'grey.100',
-      },
-    },
+  defaultProps: {
+    size: 'md',
+    variant: 'solid',
+    colorScheme: 'blue'
   }
 };
-
-export default Button;

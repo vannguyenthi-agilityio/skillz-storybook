@@ -6,6 +6,6 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 export default defineConfig((config) => ({
   plugins: [react(), tsconfigPaths()],
   esbuild: {
-    drop: config.mode === 'production' ? ['console', 'debugger'] : [],
-  },
+    drop: config.mode === 'production' ? ['console', 'debugger'] : []
+  }
 }));

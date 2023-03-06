@@ -1,121 +1,180 @@
+// Libraries
 import Storybook from '@storybook/react';
-import { Image } from '@chakra-ui/react'
-
-// Constants
-import { SIZES, VARIANTS } from '@enums/button';
-import { ASSETS } from '@constants/assets';
 
 // Components
-import Button from './index';
+import { Button } from '@chakra-ui/react';
+import CharityIcon from '@components/Icons/CharityIcon';
+
+// Code scripts
+import { asDefault, disabled, active, outline, loading, withIconLeft, withIconRight } from './Button.code';
 
 export default {
   title: 'Components/Button',
   component: Button,
-  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    backgroundColor: { control: 'color' }
+    colorScheme: {
+      options: [
+        'whiteAlpha',
+        'blackAlpha',
+        'gray',
+        'red',
+        'orange',
+        'yellow',
+        'green',
+        'teal',
+        'blue',
+        'cyan',
+        'purple',
+        'pink',
+        'linkedin',
+        'facebook',
+        'messenger',
+        'whatsapp',
+        'twitter',
+        'telegram'
+      ],
+      control: {
+        type: 'select'
+      },
+      defaultValue: 'blue'
+    },
+    variant: {
+      options: ['ghost', 'outline', 'solid', 'link', 'unstyled'],
+      control: {
+        type: 'inline-radio'
+      },
+      defaultValue: 'solid'
+    },
+    isDisabled: {
+      type: 'boolean',
+      defaultValue: false
+    },
+    isLoading: {
+      type: 'boolean',
+      defaultValue: false
+    }
   }
 } as Storybook.ComponentMeta<typeof Button>;
 
-const Template: Storybook.ComponentStory<typeof Button> = args => (
-  <Button label='Login' {...args} />
-);
+const Template: Storybook.ComponentStory<typeof Button> = (args) => <Button {...args}>Button</Button>;
 
 export const Default = Template.bind({});
-Default.args = {
-  size: SIZES.default
+Default.parameters = {
+  componentSource: {
+    code: asDefault,
+    language: 'typescript',
+    argTypes: {
+      colorScheme: {
+        options: [
+          'whiteAlpha',
+          'blackAlpha',
+          'gray',
+          'red',
+          'orange',
+          'yellow',
+          'green',
+          'teal',
+          'blue',
+          'cyan',
+          'purple',
+          'pink',
+          'linkedin',
+          'facebook',
+          'messenger',
+          'whatsapp',
+          'twitter',
+          'telegram'
+        ],
+        control: {
+          type: 'select'
+        },
+        defaultValue: 'blue'
+      },
+      variant: {
+        options: ['ghost', 'outline', 'solid', 'link', 'unstyled'],
+        control: {
+          type: 'inline-radio'
+        },
+        defaultValue: 'solid'
+      },
+      isDisabled: {
+        type: 'boolean',
+        defaultValue: false
+      },
+      isActive: {
+        type: 'boolean',
+        defaultValue: false
+      },
+      isLoading: {
+        type: 'boolean',
+        defaultValue: false
+      }
+    }
+  }
 };
 
-export const Uppercase = Template.bind({});
-Uppercase.args = {
-  variant: VARIANTS.uppercase,
-  size: SIZES.default
+export const Active = Template.bind({});
+Active.args = {
+  isActive: true
+};
+Active.parameters = {
+  componentSource: {
+    code: active,
+    language: 'typescript'
+  }
 };
 
-export const Incorrect = Template.bind({});
-Incorrect.args = {
-  size: SIZES.sm,
-  color: 'default.light',
-  label: 'Incorrect',
-  bg: 'red.500',
-  fontWeight: 'bold',
-  variant: VARIANTS.uppercase,
+export const Outline = Template.bind({});
+Outline.args = {
+  variant: 'outline'
+};
+Outline.parameters = {
+  componentSource: {
+    code: outline,
+    language: 'typescript'
+  }
 };
 
-export const Correct = Template.bind({});
-Correct.args = {
-  size: SIZES.sm,
-  color: 'grey.200',
-  label: 'Correct',
-  bg: 'transparent',
-  fontWeight: 'bold',
-  border: '1px solid',
-  borderColor: 'grey.200',
-  variant: VARIANTS.uppercase,
+export const WithIconLeft = Template.bind({});
+WithIconLeft.args = {
+  leftIcon: <CharityIcon />
+};
+WithIconLeft.parameters = {
+  componentSource: {
+    code: withIconLeft,
+    language: 'typescript'
+  }
 };
 
-export const WithIcon = Template.bind({});
-WithIcon.args = {  
-  size: SIZES.md,
-  color: 'default.light',
-  bg: 'primary.100',
-  label: 'Examination',
-  fontWeight: 'normal',
-  positionIcon: 'left',
-  icon: <Image src={ASSETS.ICON_CHARITY} alt='Icon Charity' />
+export const WithIconRight = Template.bind({});
+WithIconRight.args = {
+  rightIcon: <CharityIcon />
 };
-
-export const IconAddOnly = Template.bind({});
-IconAddOnly.args = {
-  bg: 'tranparent',
-  variant: VARIANTS.icon,
-  label: '',
-  positionIcon: 'left',
-  icon: <Image src={ASSETS.ICON_ADD} alt='Icon Add'/>
-};
-
-export const IconEditOnly = Template.bind({});
-IconEditOnly.args = {
-  bg: 'tranparent',
-  variant: VARIANTS.icon,
-  label: '',
-  positionIcon: 'left',
-  icon: <Image src={ASSETS.ICON_EDIT} alt='Icon Edit'/>
-};
-
-export const OrangeMask = Template.bind({});
-OrangeMask.args = {  
-  size: SIZES.default,
-  variant: VARIANTS.medium,
-  color: 'default.light',
-  bg: 'orange.300',
-  label: 'MetaMask',
-  fontWeight: 'normal',
-  positionIcon: 'left',
-  icon: <Image src={ASSETS.ICON_MASK} alt='Icon MetaMask' />
-};
-export const MaskFull = Template.bind({});
-MaskFull.args = {  
-  size: SIZES.full,
-  variant: VARIANTS.medium,
-  color: 'default.light',
-  bg: 'orange.300',
-  label: 'Connect MetaMask',
-  fontWeight: 'normal',
-  positionIcon: 'left',
-  icon: <Image src={ASSETS.ICON_MASK} alt='Icon MetaMask'/>
+WithIconRight.parameters = {
+  componentSource: {
+    code: withIconRight,
+    language: 'typescript'
+  }
 };
 
 export const Loading = Template.bind({});
 Loading.args = {
-  size: SIZES.default,
-  label: 'Loading',
   isLoading: true
+};
+Loading.parameters = {
+  componentSource: {
+    code: loading,
+    language: 'typescript'
+  }
 };
 
 export const Disabled = Template.bind({});
 Disabled.args = {
-  size:  SIZES.default,
-  label: 'Disabled',
   isDisabled: true
+};
+Disabled.parameters = {
+  componentSource: {
+    code: disabled,
+    language: 'typescript'
+  }
 };
