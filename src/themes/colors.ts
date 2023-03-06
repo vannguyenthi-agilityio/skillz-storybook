@@ -3,10 +3,10 @@ const colors = {
     light: '#fff',
     dark: '#000',
     secondary: '#1a1a1a',
-    secondryLight: '#f3f4f6',
+    secondaryLight: '#f3f4f6',
     tertiary: '#3a8102',
     tertiaryLight: '#cb8100',
-    placeholder: '#666',
+    placeholder: '#666'
   },
 
   primary: {
@@ -14,10 +14,10 @@ const colors = {
     200: '#378de2',
     300: '#2f79d0',
     400: '#9ccef1',
-    500: '#e4f2fb'
+    500: '#53aae7'
   },
 
-  yelow: {
+  yellow: {
     100: '#f7d465',
     200: '#cfab31'
   },

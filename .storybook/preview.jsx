@@ -1,5 +1,5 @@
 // Import the global style enabling classes
-import '../src/styles/App.css'
+import '../src/styles/App.css';
 import { ChakraProvider } from '@chakra-ui/react';
 import { BrowserRouter } from 'react-router-dom';
 import CHAKRA_THEME from '../src/themes/chakra';
@@ -15,9 +15,9 @@ export const decorators = [
         <Story />
       </ChakraProvider>
     </BrowserRouter>
-  ),
+  )
 ];
 
 export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
-}
+  actions: { argTypesRegex: '^on[A-Z].*' }
+};

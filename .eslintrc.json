@@ -5,12 +5,7 @@
     "node": true,
     "jest": true
   },
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "prettier"
-  ],
+  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:@typescript-eslint/recommended", "prettier"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
@@ -59,7 +54,14 @@
     ],
     "no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
     "no-dupe-keys": "error",
-    "@typescript-eslint/explicit-module-boundary-types": "off"
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "react/jsx-first-prop-new-line": [1, "multiline"],
+    "react/jsx-max-props-per-line": [
+      1,
+      {
+        "maximum": 1
+      }
+    ]
   },
   "settings": {
     "import/resolver": {

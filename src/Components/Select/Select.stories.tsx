@@ -1,47 +1,25 @@
-// Libraries
-import { Meta, Story } from '@storybook/react/dist/ts3.9/client/preview/types-6-0';
-
 // Component
 import Select from '.';
-import SelectComponent from './Select.code';
 
 // Types
-import { ISelect } from '@interfaces/select.interface';
+import type { ISelect } from '.';
+import type { Meta, Story } from '@storybook/react/dist/ts3.9/client/preview/types-6-0';
+
+// Code metadata
+import { asDefault, disabled, large, medium, small, withoutLabel } from './Select.code';
 
 export default {
   title: 'Components/Select',
   component: Select,
   argTypes: {
-    onChange: { action: 'onChange' },
-    label: { type: 'string' },
-    variant: {
-      options: ['outline', 'filled', 'flushed', 'unstyled'],
-      control: {
-        type: 'inline-radio',
-      },
-      defaultValue: 'outline',
-    },
-    size: {
-      options: ['lg', 'md', 'sm', 'xs'],
-      control: {
-        type: 'inline-radio',
-      },
-      defaultValue: 'md',
-    },
-    isDisabled: { type: 'boolean', defaultValue: false },
-  },
-  parameters: {
-    componentSource: {
-      code: SelectComponent,
-      language: 'typescript',
-    },
-  },
+    onChange: { action: 'onChange' }
+  }
 } as Meta;
 
 const mockOptions = [
   { label: 'Option 1', value: '1' },
   { label: 'Option 2', value: '2' },
-  { label: 'Option 3', value: '3' },
+  { label: 'Option 3', value: '3' }
 ];
 
 const Template: Story<ISelect> = (args) => <Select {...args} />;
@@ -49,38 +27,74 @@ const Template: Story<ISelect> = (args) => <Select {...args} />;
 export const Default = Template.bind({});
 Default.args = {
   label: 'Select',
-  options: mockOptions,
+  options: mockOptions
+};
+Default.parameters = {
+  componentSource: {
+    code: asDefault,
+    language: 'typescript'
+  }
 };
 
 export const WithoutLabel = Template.bind({});
 WithoutLabel.args = {
-  options: mockOptions,
+  options: mockOptions
+};
+WithoutLabel.parameters = {
+  componentSource: {
+    code: withoutLabel,
+    language: 'typescript'
+  }
 };
 
 export const Large = Template.bind({});
 Large.args = {
   options: mockOptions,
   label: 'Large',
-  size: 'lg',
+  size: 'lg'
+};
+Large.parameters = {
+  componentSource: {
+    code: large,
+    language: 'typescript'
+  }
 };
 
 export const Medium = Template.bind({});
 Medium.args = {
   options: mockOptions,
   label: 'Medium',
-  size: 'md',
+  size: 'md'
+};
+Medium.parameters = {
+  componentSource: {
+    code: medium,
+    language: 'typescript'
+  }
 };
 
 export const Small = Template.bind({});
 Small.args = {
   options: mockOptions,
   label: 'Small',
-  size: 'sm',
+  size: 'sm'
+};
+Small.parameters = {
+  componentSource: {
+    code: small,
+    language: 'typescript'
+  }
 };
 
 export const Disable = Template.bind({});
 Disable.args = {
   options: mockOptions,
   label: 'Disable',
-  isDisabled: true,
+  isDisabled: true
+};
+Disable.parameters = {
+  componentSource: {
+    code: disabled,
+    language: 'typescript'
+  }
 };
