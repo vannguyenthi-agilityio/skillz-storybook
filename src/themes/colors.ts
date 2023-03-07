@@ -1,60 +1,63 @@
-const colors = {
-  default: {
-    light: '#fff',
-    dark: '#000',
-    secondary: '#1a1a1a',
-    secondaryLight: '#f3f4f6',
-    tertiary: '#3a8102',
-    tertiaryLight: '#cb8100',
-    placeholder: '#666'
-  },
-
-  primary: {
-    100: '#53aae7',
-    200: '#378de2',
-    300: '#2f79d0',
-    400: '#9ccef1',
-    500: '#53aae7'
+/**
+ * Custom color palette
+ * Following this document: https://chakra-ui.com/docs/styled-system/theme#colors
+ */
+const CUSTOM_COLORS_PALETTE = {
+  blue: {
+    200: '#9ccef1',
+    300: '#53aae7',
+    400: '#378de2',
+    700: '#2f79d0'
   },
 
   yellow: {
-    100: '#f7d465',
-    200: '#cfab31'
+    300: '#f7d465',
+    500: '#cfab31'
+  },
+
+  lime: {
+    500: '#c1f29a'
   },
 
   green: {
-    100: '#c1f29a',
-    200: '#59ba0d',
-    300: '#38ca83'
+    400: '#59ba0d'
+  },
+
+  teal: {
+    400: '#38ca83'
   },
 
   orange: {
-    100: '#faa981',
-    200: '#ff864b',
-    300: '#dc702e'
+    200: '#faa981',
+    400: '#ff864b',
+    600: '#dc702e'
   },
 
   purple: {
-    100: '#b29cda',
-    200: '#9675cc'
+    200: '#b29cda',
+    400: '#9675cc'
   },
 
+  // Keep using "gray" as default of chakra. Defined new "grey" color into our app
   grey: {
-    100: '#ccc',
-    200: '#808080',
-    300: '#141414',
+    50: '#e6e6e6',
+    150: '#cccccc',
     400: '#4d4d4d',
-    500: '#333',
-    600: '#e6e6e6'
+    700: '#808080',
+    800: '#333333',
+    900: '#141414'
   },
 
   red: {
-    100: '#e53e3e',
-    200: '#e4317a',
-    300: '#ce0060',
-    400: '#a90056',
-    500: '#ba015e'
+    600: '#e53e3e'
+  },
+
+  pink: {
+    600: '#e4317a',
+    650: '#ce0060',
+    700: '#a90056',
+    750: '#ba015e'
   }
 };
 
-export default colors;
+export default CUSTOM_COLORS_PALETTE;
