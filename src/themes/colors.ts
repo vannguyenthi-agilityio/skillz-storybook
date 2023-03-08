@@ -20,7 +20,8 @@ const CUSTOM_COLORS_PALETTE = {
   },
 
   green: {
-    400: '#59ba0d'
+    400: '#59ba0d',
+    500: '#3a8102'
   },
 
   teal: {
@@ -53,10 +54,10 @@ const CUSTOM_COLORS_PALETTE = {
   },
 
   pink: {
+    500: '#ba015e',
     600: '#e4317a',
     650: '#ce0060',
-    700: '#a90056',
-    750: '#ba015e'
+    700: '#a90056'
   }
 };
 

@@ -1,7 +1,7 @@
 // Helpers
 import convertPxToRem from '@helpers/common';
 
-export const ButtonVariants = {
+export default {
   baseStyle: {
     borderRadius: '8px',
     fontWeights: '400',
