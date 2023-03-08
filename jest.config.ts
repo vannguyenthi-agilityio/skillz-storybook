@@ -7,7 +7,7 @@ export default {
     '^@Pages': '<rootDir>/src/Pages',
     '^@enums': '<rootDir>/src/enums/index',
     '^@constants': '<rootDir>/src/constants/index',
-    '^@helpers': '<rootDir>/src/helpers',
+    '^@helpers': '<rootDir>/src/helpers/index',
     '^@utils': '<rootDir>/src/utils',
     '^@assets': '<rootDir>/src/assets',
     '^.+\\.svg$': 'jest-svg-transformer',

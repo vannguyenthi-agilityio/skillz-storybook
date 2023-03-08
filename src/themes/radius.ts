@@ -1,4 +1,4 @@
-import convertPxToRem from '@helpers/common';
+import { convertPxToRem } from '@helpers/common';
 
 const radius = {
   xs: convertPxToRem(5),
