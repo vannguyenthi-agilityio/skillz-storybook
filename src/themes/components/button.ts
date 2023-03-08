@@ -1,5 +1,5 @@
 // Helpers
-import convertPxToRem from '@helpers/common';
+import { convertPxToRem } from '@helpers/common';
 
 export default {
   baseStyle: {
