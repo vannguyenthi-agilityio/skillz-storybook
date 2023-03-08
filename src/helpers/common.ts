@@ -4,7 +4,7 @@
  * @returns "1rem" - with pxValue is 16px
  */
 const convertPxToRem = (pxValue: number) => {
-  let baseSize = window
+  const baseSize = window
     .getComputedStyle(document.getElementsByTagName('html')[0])
     .getPropertyValue('font-size')
     .slice(0, 2);

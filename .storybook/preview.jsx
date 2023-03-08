@@ -2,7 +2,7 @@
 import '../src/styles/App.css';
 import { ChakraProvider } from '@chakra-ui/react';
 import { BrowserRouter } from 'react-router-dom';
-import CHAKRA_THEME from '../src/themes/chakra';
+import CHAKRA_THEME from '../src/themes';
 
 // Font family
 import Fonts from '../src/Fonts';

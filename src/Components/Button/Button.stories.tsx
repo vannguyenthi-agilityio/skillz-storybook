@@ -62,54 +62,7 @@ export const Default = Template.bind({});
 Default.parameters = {
   componentSource: {
     code: asDefault,
-    language: 'typescript',
-    argTypes: {
-      colorScheme: {
-        options: [
-          'whiteAlpha',
-          'blackAlpha',
-          'gray',
-          'red',
-          'orange',
-          'yellow',
-          'green',
-          'teal',
-          'blue',
-          'cyan',
-          'purple',
-          'pink',
-          'linkedin',
-          'facebook',
-          'messenger',
-          'whatsapp',
-          'twitter',
-          'telegram'
-        ],
-        control: {
-          type: 'select'
-        },
-        defaultValue: 'blue'
-      },
-      variant: {
-        options: ['ghost', 'outline', 'solid', 'link', 'unstyled'],
-        control: {
-          type: 'inline-radio'
-        },
-        defaultValue: 'solid'
-      },
-      isDisabled: {
-        type: 'boolean',
-        defaultValue: false
-      },
-      isActive: {
-        type: 'boolean',
-        defaultValue: false
-      },
-      isLoading: {
-        type: 'boolean',
-        defaultValue: false
-      }
-    }
+    language: 'typescript'
   }
 };
 
