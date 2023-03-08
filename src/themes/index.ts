@@ -8,12 +8,14 @@ import CUSTOM_COLORS_PALETTE from './colors';
 import buttonTheme from './components/button';
 import checkboxTheme from './components/checkbox';
 import avatarTheme from './components/avatar';
+import modalTheme from './components/modal';
 
 const CHAKRA_THEME = extendTheme({
   components: {
     Button: buttonTheme,
     Checkbox: checkboxTheme,
-    Avatar: avatarTheme
+    Avatar: avatarTheme,
+    Modal: modalTheme
   },
   colors: CUSTOM_COLORS_PALETTE
 });
