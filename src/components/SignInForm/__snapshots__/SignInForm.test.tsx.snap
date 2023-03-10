@@ -48,6 +48,7 @@ exports[`Sign Up Form Component should render correctly 1`] = `
             <input
               class="chakra-input css-jfggi0"
               id="field-:r0:"
+              value=""
             />
           </div>
           <div
@@ -74,6 +75,7 @@ exports[`Sign Up Form Component should render correctly 1`] = `
             <input
               class="chakra-input css-jfggi0"
               id="field-:r1:"
+              value=""
             />
           </div>
           <div

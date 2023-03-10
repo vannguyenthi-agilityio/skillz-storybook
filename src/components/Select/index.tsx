@@ -24,15 +24,16 @@ export interface ISelect extends SelectProps {
   /**
    * Selected value
    */
-  value: string;
+  value?: string;
 }
 
 export const Select = ({ options, label, value, ...rest }: ISelect) => {
   return (
     <label>
-      <Text mb={2}>{label}</Text>
+      {label && <Text mb={2}>{label}</Text>}
       <ChakraSelect
         value={value}
+        onChange={rest.onChange}
         {...rest}
         data-testid='select'
       >

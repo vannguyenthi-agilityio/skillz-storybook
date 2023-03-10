@@ -48,6 +48,7 @@ exports[`Sign Up Form Component should render correctly 1`] = `
             <input
               class="chakra-input css-jfggi0"
               id="field-:r0:"
+              value=""
             />
           </div>
           <div
@@ -86,6 +87,7 @@ exports[`Sign Up Form Component should render correctly 1`] = `
                 <input
                   class="chakra-input css-byf2lk"
                   id="field-:r2:"
+                  value=""
                 />
               </div>
             </div>
@@ -106,6 +108,7 @@ exports[`Sign Up Form Component should render correctly 1`] = `
                 <input
                   class="chakra-input css-byf2lk"
                   id="field-:r3:"
+                  value=""
                 />
               </div>
             </div>
@@ -122,9 +125,6 @@ exports[`Sign Up Form Component should render correctly 1`] = `
               Select Role
             </label>
             <label>
-              <p
-                class="chakra-text css-wlea3r"
-              />
               <div
                 class="chakra-select__wrapper css-42b2qy"
               >
