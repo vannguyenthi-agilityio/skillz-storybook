@@ -1,6 +1,6 @@
-const fonts = {
-  heading: `"regularFont", sans-serif`,
-  body: `"boldFont", sans-serif`
+const CUSTOM_FONTS = {
+  heading: `'boldFont', sans-serif`,
+  body: `'primaryFont', sans-serif`
 };
 
-export default fonts;
+export default CUSTOM_FONTS;

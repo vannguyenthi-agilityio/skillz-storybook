@@ -4,7 +4,7 @@ import { convertPxToRem } from '@helpers/common';
 export default {
   baseStyle: {
     borderRadius: '8px',
-    fontWeights: '400',
+    fontWeight: '400',
     fontStyle: 'normal',
     lineHeight: '2rem'
   },
