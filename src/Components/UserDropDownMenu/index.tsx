@@ -10,7 +10,7 @@ import {
 } from '@chakra-ui/react';
 
 // Components
-import { Avatar } from '@Components/index';
+import { Avatar } from '@components/index';
 
 // Enums
 import { SIZES } from '@enums';

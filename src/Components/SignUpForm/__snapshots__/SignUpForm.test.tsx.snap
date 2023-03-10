@@ -186,7 +186,7 @@ exports[`Sign Up Form Component should render correctly 1`] = `
                 Already have an account?
               </p>
               <button
-                class="chakra-button css-18krmzw"
+                class="chakra-button css-oyao5x"
                 type="submit"
               >
                 <span

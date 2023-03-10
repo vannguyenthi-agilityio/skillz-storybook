@@ -1,4 +1,4 @@
-const CharityIcon = () => {
+export const CharityIcon = () => {
   return (
     <svg
       width='22'
@@ -11,5 +11,3 @@ const CharityIcon = () => {
     </svg>
   );
 };
-
-export default CharityIcon;

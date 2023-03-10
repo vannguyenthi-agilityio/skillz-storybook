@@ -32,8 +32,9 @@ const CUSTOM_COLORS_PALETTE = {
 
   orange: {
     200: '#faa981',
-    400: '#ff864b',
-    600: '#dc702e'
+    500: '#ff864b',
+    600: '#dc702e',
+    700: '#c55f21'
   },
 
   purple: {
@@ -45,7 +46,7 @@ const CUSTOM_COLORS_PALETTE = {
   grey: {
     50: '#f7f8fa',
     100: '#e6e6e6',
-    150: '#cccccc',
+    150: '#b3b3b3',
     400: '#4d4d4d',
     500: '#999999',
     700: '#808080',
@@ -58,10 +59,10 @@ const CUSTOM_COLORS_PALETTE = {
   },
 
   pink: {
-    500: '#ba015e',
-    600: '#e4317a',
+    500: '#e4317a',
+    600: '#ba015e',
     650: '#ce0060',
-    700: '#a90056'
+    700: '#cb1b62'
   },
 
   cyan: {

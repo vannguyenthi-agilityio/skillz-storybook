@@ -19,6 +19,14 @@ export default {
     lg: {
       px: `${convertPxToRem(32)}`,
       py: `${convertPxToRem(16)}`
+    },
+    xl: {
+      px: `${convertPxToRem(42)}`,
+      py: `${convertPxToRem(16)}`
+    },
+    full: {
+      width: 'full',
+      py: `${convertPxToRem(17)}`
     }
   },
   variants: {
