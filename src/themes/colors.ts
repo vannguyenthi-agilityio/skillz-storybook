@@ -8,6 +8,7 @@ const CUSTOM_COLORS_PALETTE = {
     200: '#9ccef1',
     300: '#53aae7',
     400: '#378de2',
+    450: '#2867be',
     700: '#2f79d0'
   },
 
@@ -42,9 +43,11 @@ const CUSTOM_COLORS_PALETTE = {
 
   // Keep using "gray" as default of chakra. Defined new "grey" color into our app
   grey: {
-    50: '#e6e6e6',
+    50: '#f7f8fa',
+    100: '#e6e6e6',
     150: '#cccccc',
     400: '#4d4d4d',
+    500: '#999999',
     700: '#808080',
     800: '#333333',
     900: '#141414'
@@ -59,6 +62,11 @@ const CUSTOM_COLORS_PALETTE = {
     600: '#e4317a',
     650: '#ce0060',
     700: '#a90056'
+  },
+
+  cyan: {
+    400: '#9ccef1',
+    500: '#53aae7'
   }
 };
 

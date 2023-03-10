@@ -25,19 +25,13 @@ export interface ISelect extends SelectProps {
    * Selected value
    */
   value: string;
-
-  /**
-   * Set change event for select component
-   */
-  onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
 }
 
-export const Select = ({ options, label, value, onChange, ...rest }: ISelect) => {
+export const Select = ({ options, label, value, ...rest }: ISelect) => {
   return (
     <label>
       <Text mb={2}>{label}</Text>
       <ChakraSelect
-        onChange={onChange}
         value={value}
         {...rest}
         data-testid='select'

@@ -6,7 +6,7 @@ export default {
     borderRadius: '8px',
     fontWeight: '400',
     fontStyle: 'normal',
-    lineHeight: '2rem'
+    lineHeight: '17px'
   },
   sizes: {
     sm: {
@@ -17,7 +17,8 @@ export default {
       py: `${convertPxToRem(12)}`
     },
     lg: {
-      //TODO: Add large size if has any
+      px: `${convertPxToRem(32)}`,
+      py: `${convertPxToRem(16)}`
     }
   },
   variants: {

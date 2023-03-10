@@ -1,0 +1,229 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sign Up Form Component should render correctly 1`] = `
+<div
+  class="css-19yalj4"
+  data-testid="signup-form"
+>
+  <div
+    class="chakra-stack css-n21gh5"
+  >
+    <div
+      class="chakra-stack css-n21gh5"
+    >
+      <p
+        class="chakra-text css-xz5sx0"
+      >
+        Register a 
+        <b
+          class="chakra-text css-0"
+        >
+          New Account
+        </b>
+      </p>
+      <p
+        class="chakra-text css-eyl5ww"
+      >
+        Fill out the form to get started.
+      </p>
+    </div>
+    <form>
+      <div
+        class="css-0"
+      >
+        <div
+          class="chakra-stack css-9ii5uu"
+        >
+          <div
+            class="chakra-form-control css-0"
+            role="group"
+          >
+            <label
+              class="chakra-form__label css-phz0n9"
+              for="field-:r0:"
+              id="field-:r0:-label"
+            >
+              Username
+            </label>
+            <input
+              class="chakra-input css-jfggi0"
+              id="field-:r0:"
+            />
+          </div>
+          <div
+            class="chakra-form-control css-0"
+            role="group"
+          >
+            <label
+              class="chakra-form__label css-phz0n9"
+              for="field-:r1:"
+              id="field-:r1:-label"
+            >
+              Email address
+            </label>
+            <input
+              class="chakra-input css-jfggi0"
+              id="field-:r1:"
+            />
+          </div>
+          <div
+            class="chakra-stack css-h9aagw"
+          >
+            <div
+              class="css-13rbvqk"
+            >
+              <div
+                class="chakra-form-control css-0"
+                role="group"
+              >
+                <label
+                  class="chakra-form__label css-phz0n9"
+                  for="field-:r2:"
+                  id="field-:r2:-label"
+                >
+                  Password
+                </label>
+                <input
+                  class="chakra-input css-byf2lk"
+                  id="field-:r2:"
+                />
+              </div>
+            </div>
+            <div
+              class="css-13rbvqk"
+            >
+              <div
+                class="chakra-form-control css-0"
+                role="group"
+              >
+                <label
+                  class="chakra-form__label css-phz0n9"
+                  for="field-:r3:"
+                  id="field-:r3:-label"
+                >
+                  Confirm password
+                </label>
+                <input
+                  class="chakra-input css-byf2lk"
+                  id="field-:r3:"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="chakra-form-control css-0"
+            role="group"
+          >
+            <label
+              class="chakra-form__label css-phz0n9"
+              for="field-:r4:"
+              id="field-:r4:-label"
+            >
+              Select Role
+            </label>
+            <label>
+              <p
+                class="chakra-text css-wlea3r"
+              />
+              <div
+                class="chakra-select__wrapper css-42b2qy"
+              >
+                <select
+                  class="chakra-select css-otbowv"
+                  data-testid="select"
+                  id="field-:r4:"
+                >
+                  <option
+                    value="candidate"
+                  >
+                    Candidate
+                  </option>
+                  <option
+                    value="evaluator"
+                  >
+                    Evaluator
+                  </option>
+                  <option
+                    value="instructor"
+                  >
+                    Instructor
+                  </option>
+                  <option
+                    value="recruiter"
+                  >
+                    Recruiter
+                  </option>
+                </select>
+                <div
+                  class="chakra-select__icon-wrapper css-162mkon"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="chakra-select__icon"
+                    focusable="false"
+                    role="presentation"
+                    style="width: 1em; height: 1em; color: currentColor;"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </label>
+          </div>
+          <div
+            class="chakra-stack css-1oeb4ru"
+          >
+            <div
+              class="css-0"
+            >
+              <p
+                class="chakra-text css-1dj8urd"
+              >
+                Already have an account?
+              </p>
+              <button
+                class="chakra-button css-18krmzw"
+                type="submit"
+              >
+                <span
+                  class="chakra-button__icon css-1wh2kri"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g>
+                      <path
+                        d="m12.02631,0.11507a11.79747,11.855 0 1 1 0,23.71001a11.79747,11.855 0 0 1 0,-23.71001zm-5.16139,11.11407a0.73734,0.74094 0 0 0 0,1.48188l8.54284,0l-3.16615,3.1801a0.73734,0.74094 0 0 0 1.04408,1.04917l4.42405,-4.44563a0.73734,0.74094 0 0 0 0,-1.04917l-4.42405,-4.44563a0.73734,0.74094 0 1 0 -1.04408,1.04917l3.16615,3.1801l-8.54284,0z"
+                        stroke="null"
+                      />
+                    </g>
+                  </svg>
+                </span>
+                Click to sign in
+              </button>
+            </div>
+            <div
+              class="css-0"
+            >
+              <button
+                class="chakra-button css-oyao5x"
+                type="button"
+              >
+                Create an Account
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+`;
