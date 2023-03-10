@@ -3,7 +3,7 @@ import Storybook from '@storybook/react';
 
 // Components
 import { Button } from '@chakra-ui/react';
-import CharityIcon from '@components/Icons/CharityIcon';
+import { CharityIcon } from '@components/Icons';
 
 // Code scripts
 import { asDefault, disabled, active, outline, loading, withIconLeft, withIconRight } from './Button.code';

@@ -3,8 +3,8 @@ export default {
   testEnvironment: 'jsdom',
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   moduleNameMapper: {
-    '^@Components': '<rootDir>/src/Components',
-    '^@Pages': '<rootDir>/src/Pages',
+    '^@components': '<rootDir>/src/components',
+    '^@pages': '<rootDir>/src/pages',
     '^@enums': '<rootDir>/src/enums/index',
     '^@constants': '<rootDir>/src/constants/index',
     '^@helpers': '<rootDir>/src/helpers/index',
