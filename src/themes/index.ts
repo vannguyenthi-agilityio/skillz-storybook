@@ -13,6 +13,8 @@ import checkboxTheme from './components/checkbox';
 import avatarTheme from './components/avatar';
 import menuTheme from './components/menu';
 import modalTheme from './components/modal';
+import selectTheme from './components/select';
+import inputTheme from './components/input';
 
 const CHAKRA_THEME = extendTheme({
   components: {
@@ -20,7 +22,9 @@ const CHAKRA_THEME = extendTheme({
     Checkbox: checkboxTheme,
     Avatar: avatarTheme,
     Menu: menuTheme,
-    Modal: modalTheme
+    Modal: modalTheme,
+    Select: selectTheme,
+    Input: inputTheme
   },
   colors: CUSTOM_COLORS_PALETTE,
   fonts: CUSTOM_FONTS,

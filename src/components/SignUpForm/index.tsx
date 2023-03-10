@@ -47,7 +47,10 @@ const SignUpForm = () => (
               >
                 Username
               </FormLabel>
-              <Input bg='white' />
+              <Input
+                bg='white'
+                defaultValue=''
+              />
             </FormControl>
             <FormControl>
               <FormLabel
@@ -69,6 +72,7 @@ const SignUpForm = () => (
                   </FormLabel>
                   <Input
                     px={convertPxToRem(20)}
+                    defaultValue=''
                     bg='white'
                   />
                 </FormControl>
@@ -83,6 +87,7 @@ const SignUpForm = () => (
                   </FormLabel>
                   <Input
                     px={convertPxToRem(20)}
+                    defaultValue=''
                     bg='white'
                   />
                 </FormControl>
@@ -97,6 +102,7 @@ const SignUpForm = () => (
               </FormLabel>
               <Select
                 options={roles}
+                onChange={() => {}}
                 value={roles[0].value}
                 bg='white'
               />

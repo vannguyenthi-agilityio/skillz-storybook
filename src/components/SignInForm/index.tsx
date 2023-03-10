@@ -40,7 +40,10 @@ const SignInForm = () => (
               >
                 Username
               </FormLabel>
-              <Input bg='white' />
+              <Input
+                bg='white'
+                defaultValue=''
+              />
             </FormControl>
             <FormControl>
               <HStack justify='space-between'>
@@ -58,7 +61,10 @@ const SignInForm = () => (
                   Forgot your password?
                 </Button>
               </HStack>
-              <Input bg='white' />
+              <Input
+                bg='white'
+                defaultValue=''
+              />
             </FormControl>
 
             <HStack justify='space-between'>
