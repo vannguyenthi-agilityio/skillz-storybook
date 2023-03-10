@@ -113,7 +113,7 @@ const SignUpForm = () => (
                 <Button
                   variant='link'
                   leftIcon={<RightArrowIcon />}
-                  color='pink.600'
+                  colorScheme='pink'
                   fontSize='14px'
                   type='submit'
                 >
