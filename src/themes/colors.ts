@@ -4,6 +4,7 @@
  */
 const CUSTOM_COLORS_PALETTE = {
   blue: {
+    150: '#e4f2fb',
     200: '#9ccef1',
     300: '#53aae7',
     400: '#378de2',
