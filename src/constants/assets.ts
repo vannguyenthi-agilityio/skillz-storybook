@@ -3,6 +3,5 @@ export const ASSETS = {
   ICON_MASK: 'assets/icons/mask.svg',
   ICON_ADD: 'assets/icons/add.svg',
   ICON_EDIT: 'assets/icons/edit.svg',
-  ICON_ARROW: 'assets/icons/arrow.svg',
-  ICON_SEARCH: 'assets/icons/search.svg'
+  ICON_ARROW: 'assets/icons/arrow.svg'
 };

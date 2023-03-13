@@ -1,15 +1,12 @@
 // Components
-import { Input, InputGroup, InputRightElement, InputLeftElement, Image } from '@chakra-ui/react';
+import { Input, InputGroup, InputRightElement, InputLeftElement, IconButton } from '@chakra-ui/react';
 import { Select } from '@components/index';
-
-// Constants
-import { ASSETS } from '@constants/index';
+import { SearchIcon } from '@components/Icons';
 
 // Helpers
 import { convertPxToRem } from '@helpers/common';
 
 export const SearchFilterInput = ({ ...rest }) => {
-
   // TODO: Remove
   const mockOptions = [
     { label: 'Filter All', value: '1' },
@@ -25,6 +22,7 @@ export const SearchFilterInput = ({ ...rest }) => {
     >
       <InputRightElement
         h='full'
+        w={`${convertPxToRem(63)}`}
         color='gray.300'
         bg='blue.300'
         p='5'
@@ -33,9 +31,13 @@ export const SearchFilterInput = ({ ...rest }) => {
         borderTopRightRadius={`${convertPxToRem(7)}`}
         borderBottomRightRadius={`${convertPxToRem(7)}`}
       >
-        <Image
-          src={ASSETS.ICON_SEARCH}
-          alt='Icon Search'
+        <IconButton
+          display='flex'
+          justifyContent='center'
+          alignItems='center'
+          aria-label='Search database'
+          icon={<SearchIcon />}
+          variant='unstyled'
         />
       </InputRightElement>
       <InputLeftElement
@@ -60,7 +62,7 @@ export const SearchFilterInput = ({ ...rest }) => {
         size='md'
         fontSize={`${convertPxToRem(14)}`}
         borderRadius={`${convertPxToRem(7)}`}
-        paddingLeft={`${convertPxToRem(115)}`}
+        paddingLeft={`${convertPxToRem(123)}`}
         outline='auto'
         outlineOffset='1px'
         border='none'
