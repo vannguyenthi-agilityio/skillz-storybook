@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TokensBalance Component should render correctly 1`] = `
+<div
+  class="css-70qvj9"
+  data-testid="tokents-balance"
+>
+  <svg
+    fill="none"
+    height="40"
+    viewBox="0 0 36 40"
+    width="36"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M18 31.9777C25.7196 31.9777 31.9777 25.7196 31.9777 18C31.9777 10.2804 25.7196 4.02235 18 4.02235C10.2804 4.02235 4.02235 10.2804 4.02235 18C4.02235 25.7196 10.2804 31.9777 18 31.9777Z"
+      fill="#FF864B"
+    />
+    <path
+      clip-rule="evenodd"
+      d="M36 18C36 27.9411 27.9411 36 18 36C8.05887 36 0 27.9411 0 18C0 8.05887 8.05887 0 18 0C27.9411 0 36 8.05887 36 18ZM33.9888 18C33.9888 26.8304 26.8304 33.9888 18 33.9888C9.16961 33.9888 2.01117 26.8304 2.01117 18C2.01117 9.16961 9.16961 2.01117 18 2.01117C26.8304 2.01117 33.9888 9.16961 33.9888 18Z"
+      fill="#FF864B"
+      fill-rule="evenodd"
+    />
+    <g
+      filter="url(#filter0_dd_746_4824)"
+    >
+      <path
+        d="M17.0027 10.6661C17.3695 9.92286 18.4294 9.92286 18.7962 10.6661L20.3857 13.8868C20.5314 14.182 20.8129 14.3865 21.1387 14.4338L24.6929 14.9503C25.5131 15.0695 25.8406 16.0775 25.2471 16.656L22.6752 19.163C22.4395 19.3927 22.332 19.7237 22.3876 20.0481L22.9948 23.588C23.1349 24.4049 22.2775 25.0279 21.5438 24.6422L18.3648 22.9709C18.0735 22.8177 17.7255 22.8177 17.4341 22.9709L14.2551 24.6422C13.5215 25.0279 12.664 24.4049 12.8042 23.588L13.4113 20.0481C13.4669 19.7237 13.3594 19.3927 13.1237 19.163L10.5518 16.656C9.9583 16.0775 10.2858 15.0695 11.106 14.9503L14.6603 14.4338C14.986 14.3865 15.2676 14.182 15.4132 13.8868L17.0027 10.6661Z"
+        fill="#FFEBAB"
+      />
+    </g>
+    <defs>
+      <filter
+        color-interpolation-filters="sRGB"
+        filterUnits="userSpaceOnUse"
+        height="34.6504"
+        id="filter0_dd_746_4824"
+        width="35.3014"
+        x="0.248779"
+        y="10.1089"
+      >
+        <feflood
+          flood-opacity="0"
+          result="BackgroundImageFix"
+        />
+        <fecolormatrix
+          in="SourceAlpha"
+          result="hardAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+        />
+        <feoffset
+          dy="10"
+        />
+        <fegaussianblur
+          stdDeviation="5"
+        />
+        <fecomposite
+          in2="hardAlpha"
+          operator="out"
+        />
+        <fecolormatrix
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"
+        />
+        <feblend
+          in2="BackgroundImageFix"
+          mode="normal"
+          result="effect1_dropShadow_746_4824"
+        />
+        <fecolormatrix
+          in="SourceAlpha"
+          result="hardAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+        />
+        <feoffset
+          dy="4"
+        />
+        <fegaussianblur
+          stdDeviation="2"
+        />
+        <fecomposite
+          in2="hardAlpha"
+          operator="out"
+        />
+        <fecolormatrix
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
+        />
+        <feblend
+          in2="effect1_dropShadow_746_4824"
+          mode="normal"
+          result="effect2_dropShadow_746_4824"
+        />
+        <feblend
+          in="SourceGraphic"
+          in2="effect2_dropShadow_746_4824"
+          mode="normal"
+          result="shape"
+        />
+      </filter>
+    </defs>
+  </svg>
+  <p
+    class="chakra-text css-2k2zd"
+  >
+    129
+  </p>
+  <button
+    aria-label="Add Icon"
+    class="chakra-button css-8j8mi4"
+    type="button"
+  >
+    <svg
+      fill="none"
+      height="22"
+      viewBox="0 0 22 22"
+      width="22"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M11.0001 21.8332C5.01972 21.8266 0.173316 16.9802 0.166748 10.9999V10.7832C0.28584 4.82977 5.18755 0.088476 11.1416 0.167477C17.0957 0.246478 21.8699 5.11615 21.831 11.0706C21.7921 17.0251 16.9547 21.832 11.0001 21.8332ZM5.58342 9.91652V12.0832H9.91675V16.4165H12.0834V12.0832H16.4167V9.91652H12.0834V5.58319H9.91675V9.91652H5.58342Z"
+        fill="#2F79D0"
+      />
+    </svg>
+  </button>
+</div>
+`;
