@@ -6,6 +6,7 @@ import CUSTOM_COLORS_PALETTE from './colors';
 
 import CUSTOM_FONTS from './fonts';
 import CUSTOM_SHADOWS from './shadows';
+import CUSTOM_FONTSIZES from './fontSizes';
 
 // Custom theme of Component
 import buttonTheme from './components/button';
@@ -28,7 +29,8 @@ const CHAKRA_THEME = extendTheme({
   },
   colors: CUSTOM_COLORS_PALETTE,
   fonts: CUSTOM_FONTS,
-  shadows: CUSTOM_SHADOWS
+  shadows: CUSTOM_SHADOWS,
+  fontSizes: CUSTOM_FONTSIZES
 });
 
 export default CHAKRA_THEME;

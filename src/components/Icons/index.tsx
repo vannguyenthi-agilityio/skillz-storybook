@@ -4,3 +4,6 @@ export * from './RightArrowIcon';
 export * from './AddIcon';
 export * from './UnionIcon';
 export * from './SearchIcon';
+export * from './LogoIcon';
+export * from './MaskIcon';
+export * from './SignInIcon';
