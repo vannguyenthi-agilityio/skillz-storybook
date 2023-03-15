@@ -9,8 +9,13 @@ export default {
     lineHeight: '17px'
   },
   sizes: {
+    xs: {
+      px: `${convertPxToRem(11)}`,
+      py: `${convertPxToRem(22)}`
+    },
     sm: {
-      //TODO: Add small size if has any
+      px: `${convertPxToRem(15)}`,
+      py: `${convertPxToRem(24)}`
     },
     md: {
       px: `${convertPxToRem(24)}`,
