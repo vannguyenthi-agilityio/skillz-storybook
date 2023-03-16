@@ -10,6 +10,9 @@ import type { CheckboxProps } from '@chakra-ui/react';
 // Code scripts
 import { asDefault, black, danger, disabled, success, withTick } from './ChecBox.code';
 
+// Enums
+import { COLORS } from '@enums';
+
 export default {
   title: 'Components/Checkbox',
   component: Checkbox,
@@ -117,7 +120,7 @@ Danger.parameters = {
 
 export const Black = Template.bind({});
 Black.args = {
-  variant: 'black',
+  variant: `${COLORS.BLACK}`,
   children: 'Some text here',
   isChecked: true,
   icon: (

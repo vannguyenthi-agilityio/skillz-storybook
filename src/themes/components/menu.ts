@@ -1,23 +1,26 @@
 // Helpers
 import { convertPxToRem } from '@helpers/common';
 
+// Enums
+import { COLORS } from '@enums';
+
 export const menuTheme = {
   baseStyle: {
     list: {
       py: convertPxToRem(13),
-      bg: 'white',
+      bg: COLORS.WHITE,
       border: 'none',
       minW: convertPxToRem(212)
     },
     item: {
       py: convertPxToRem(4),
       px: convertPxToRem(20),
-      color: 'grey.400',
+      color: `${COLORS.GREY}.400`,
       _hover: {
-        bg: 'blue.150'
+        bg: `${COLORS.BLUE}.150`
       },
       _focus: {
-        bg: 'blue.150'
+        bg: `${COLORS.BLUE}.150`
       }
     }
   }

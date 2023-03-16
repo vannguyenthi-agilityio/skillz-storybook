@@ -2,6 +2,9 @@
 import { Box, Button, FormControl, FormLabel, HStack, Input, Stack, Text } from '@chakra-ui/react';
 import { RightArrowIcon, Select } from '@components';
 
+// Enums
+import { COLORS } from '@enums';
+
 // Helpers
 import { convertPxToRem } from '@helpers';
 
@@ -14,7 +17,7 @@ const roles = [
 
 const SignUpForm = () => (
   <Box
-    bg='grey.50'
+    bg={`${COLORS.GREY}.50`}
     px={convertPxToRem(45)}
     pt={convertPxToRem(30)}
     pb={convertPxToRem(150)}
@@ -26,13 +29,13 @@ const SignUpForm = () => (
       <Stack>
         <Text
           fontSize='24px'
-          color='blue.450'
+          color={`${COLORS.BLUE}.450`}
         >
           Register a <Text as='b'>New Account</Text>
         </Text>
         <Text
           fontSize='14px'
-          color='grey.500'
+          color={`${COLORS.GREY}.500`}
         >
           Fill out the form to get started.
         </Text>
@@ -48,7 +51,7 @@ const SignUpForm = () => (
                 Username
               </FormLabel>
               <Input
-                bg='white'
+                bg={COLORS.WHITE}
                 defaultValue=''
               />
             </FormControl>
@@ -59,7 +62,7 @@ const SignUpForm = () => (
               >
                 Email address
               </FormLabel>
-              <Input bg='white' />
+              <Input bg={COLORS.WHITE} />
             </FormControl>
             <HStack spacing='30px'>
               <Box w='full'>
@@ -73,7 +76,7 @@ const SignUpForm = () => (
                   <Input
                     px={convertPxToRem(20)}
                     defaultValue=''
-                    bg='white'
+                    bg={COLORS.WHITE}
                   />
                 </FormControl>
               </Box>
@@ -88,7 +91,7 @@ const SignUpForm = () => (
                   <Input
                     px={convertPxToRem(20)}
                     defaultValue=''
-                    bg='white'
+                    bg={COLORS.WHITE}
                   />
                 </FormControl>
               </Box>
@@ -104,14 +107,14 @@ const SignUpForm = () => (
                 options={roles}
                 onChange={() => {}}
                 value={roles[0].value}
-                bg='white'
+                bg={COLORS.WHITE}
               />
             </FormControl>
             <HStack justify='space-between'>
               <Box>
                 <Text
                   fontSize='14px'
-                  color='grey.500'
+                  color={`${COLORS.GREY}.500`}
                   pb='10px'
                 >
                   Already have an account?
@@ -119,7 +122,7 @@ const SignUpForm = () => (
                 <Button
                   variant='link'
                   leftIcon={<RightArrowIcon />}
-                  colorScheme='pink'
+                  colorScheme={COLORS.PINK}
                   fontSize='14px'
                   type='submit'
                 >

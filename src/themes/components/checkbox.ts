@@ -1,5 +1,9 @@
+// Libraries
 import { checkboxAnatomy as parts } from '@chakra-ui/anatomy';
 import { createMultiStyleConfigHelpers, defineStyle } from '@chakra-ui/styled-system';
+
+// Enums
+import { COLORS } from '@enums';
 
 const { definePartsStyle, defineMultiStyleConfig } = createMultiStyleConfigHelpers(parts.keys);
 
@@ -78,11 +82,11 @@ const black = definePartsStyle({
     rounded: 'full',
     _checked: {
       _hover: {
-        background: 'black',
-        borderColor: 'black'
+        background: `${COLORS.BLACK}`,
+        borderColor: `${COLORS.BLACK}`
       },
-      background: 'black',
-      borderColor: 'black'
+      background: `${COLORS.BLACK}`,
+      borderColor: `${COLORS.BLACK}`
     },
     _disabled: {
       background: 'white'

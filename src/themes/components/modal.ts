@@ -2,6 +2,9 @@
 import { modalAnatomy as parts } from '@chakra-ui/anatomy';
 import { createMultiStyleConfigHelpers, defineStyle } from '@chakra-ui/styled-system';
 
+// Enums
+import { COLORS } from '@enums';
+
 // Helpers
 import { convertPxToRem } from '@helpers';
 
@@ -12,7 +15,7 @@ const baseStyle = definePartsStyle({
     borderRadius: '10px',
     borderRight: '15px solid',
     borderLeft: '15px solid',
-    borderColor: 'blue.500',
+    borderColor: `${COLORS.BLUE}.500`,
     w: '100%',
     boxSizing: 'content-box'
   }),

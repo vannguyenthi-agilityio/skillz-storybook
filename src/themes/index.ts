@@ -16,6 +16,7 @@ import menuTheme from './components/menu';
 import modalTheme from './components/modal';
 import selectTheme from './components/select';
 import inputTheme from './components/input';
+import cardTheme from './components/card';
 
 const CHAKRA_THEME = extendTheme({
   components: {
@@ -25,7 +26,8 @@ const CHAKRA_THEME = extendTheme({
     Menu: menuTheme,
     Modal: modalTheme,
     Select: selectTheme,
-    Input: inputTheme
+    Input: inputTheme,
+    Card: cardTheme
   },
   colors: CUSTOM_COLORS_PALETTE,
   fonts: CUSTOM_FONTS,
