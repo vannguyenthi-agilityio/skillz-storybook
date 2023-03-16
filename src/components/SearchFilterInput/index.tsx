@@ -6,6 +6,9 @@ import { SearchIcon } from '@components/Icons';
 // Helpers
 import { convertPxToRem } from '@helpers/common';
 
+// Enums
+import { COLORS } from '@enums';
+
 export const SearchFilterInput = ({ ...rest }) => {
   // TODO: Remove
   const mockOptions = [
@@ -23,8 +26,8 @@ export const SearchFilterInput = ({ ...rest }) => {
       <InputRightElement
         h='full'
         w={`${convertPxToRem(63)}`}
-        color='gray.300'
-        bg='blue.300'
+        color={`${COLORS.GRAY}.300`}
+        bg={`${COLORS.BLUE}.300`}
         p='5'
         cursor='pointer'
         minW={`${convertPxToRem(50)}`}
@@ -42,8 +45,8 @@ export const SearchFilterInput = ({ ...rest }) => {
       </InputRightElement>
       <InputLeftElement
         h='full'
-        color='gray.300'
-        bg='grey.50'
+        color={`${COLORS.GRAY}.300`}
+        bg={`${COLORS.GREY}.50`}
         py='5'
         minW={`${convertPxToRem(110)}`}
         borderTopLeftRadius={`${convertPxToRem(7)}`}
@@ -66,7 +69,7 @@ export const SearchFilterInput = ({ ...rest }) => {
         outline='auto'
         outlineOffset='1px'
         border='none'
-        outlineColor='blue.200'
+        outlineColor={`${COLORS.BLUE}.200`}
         placeholder='Search Course / Question...'
       />
     </InputGroup>

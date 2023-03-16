@@ -12,6 +12,9 @@ import { User } from '@interfaces/userDropDown.interface';
 // Helpers
 import { convertPxToRem, isEmpty } from '@helpers/common';
 
+// Enums
+import { COLORS } from '@enums';
+
 interface HeaderProps {
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
   userInfo?: User;
@@ -41,7 +44,7 @@ const Header = ({ userInfo, ...rest }: HeaderProps) => {
           fontSize='2xl'
           ml='3'
           textTransform='uppercase'
-          color='grey.150'
+          color={`${COLORS.GREY}.150`}
         >
           Logo
         </Heading>
@@ -66,7 +69,7 @@ const Header = ({ userInfo, ...rest }: HeaderProps) => {
         >
           <Button
             leftIcon={<CharityIcon />}
-            bg='cyan.500'
+            bg={`${COLORS.CYAN}.500`}
             minW={{
               base: convertPxToRem(145),
               sm: convertPxToRem(150),
@@ -101,10 +104,10 @@ const Header = ({ userInfo, ...rest }: HeaderProps) => {
         >
           <Button
             leftIcon={<MaskIcon />}
-            bg='orange.600'
+            bg={`${COLORS.ORANGE}.600`}
             mr={{ base: convertPxToRem(20), '2xl': convertPxToRem(24) }}
             size={{ base: 'xs', md: 'sm' }}
-            colorScheme='orange.200'
+            colorScheme={`${COLORS.ORANGE}.200`}
             onClick={rest.onClick}
           >
             <Text
@@ -118,7 +121,7 @@ const Header = ({ userInfo, ...rest }: HeaderProps) => {
             h='45px'
             orientation='vertical'
             mr={{ base: convertPxToRem(20), '2xl': convertPxToRem(24) }}
-            borderColor='black'
+            borderColor={COLORS.BLACK}
           />
           {hasUserInfo ? (
             <Flex alignItems='center'>
@@ -130,7 +133,7 @@ const Header = ({ userInfo, ...rest }: HeaderProps) => {
               <Text
                 ml='2'
                 fontSize='sm'
-                color='grey.800'
+                color={`${COLORS.GREY}.800`}
               >
                 Sign in
               </Text>

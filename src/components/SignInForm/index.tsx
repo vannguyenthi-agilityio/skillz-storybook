@@ -2,6 +2,9 @@
 import { Box, Button, Divider, FormControl, FormLabel, HStack, Input, Stack, Text } from '@chakra-ui/react';
 import { RightArrowIcon, MetaMaskIcon } from '@components';
 
+// Enums
+import { COLORS } from '@enums';
+
 // Helpers
 import { convertPxToRem } from '@helpers';
 
@@ -19,13 +22,13 @@ const SignInForm = () => (
       <Stack>
         <Text
           fontSize='24px'
-          color='blue.450'
+          color={`${COLORS.BLUE}.450`}
         >
           Welcome <Text as='b'>back</Text>
         </Text>
         <Text
           fontSize='14px'
-          color='grey.500'
+          color={`${COLORS.GREY}.500`}
         >
           Login to your account
         </Text>
@@ -41,7 +44,7 @@ const SignInForm = () => (
                 Username
               </FormLabel>
               <Input
-                bg='white'
+                bg={COLORS.WHITE}
                 defaultValue=''
               />
             </FormControl>
@@ -55,14 +58,14 @@ const SignInForm = () => (
                 </FormLabel>
                 <Button
                   variant='link'
-                  color='blue.400'
+                  color={`${COLORS.BLUE}.400`}
                   fontSize='14px'
                 >
                   Forgot your password?
                 </Button>
               </HStack>
               <Input
-                bg='white'
+                bg={COLORS.WHITE}
                 defaultValue=''
               />
             </FormControl>
@@ -71,7 +74,7 @@ const SignInForm = () => (
               <Box>
                 <Text
                   fontSize='14px'
-                  color='grey.500'
+                  color={`${COLORS.GREY}.500`}
                   pb='10px'
                 >
                   Don&rsquo;t have an account?
@@ -79,7 +82,7 @@ const SignInForm = () => (
                 <Button
                   variant='link'
                   leftIcon={<RightArrowIcon />}
-                  colorScheme='pink'
+                  colorScheme={COLORS.PINK}
                   fontSize='14px'
                   type='submit'
                 >
@@ -102,13 +105,13 @@ const SignInForm = () => (
     <Divider
       my={convertPxToRem(30)}
       borderWidth='1px'
-      borderColor='grey.150'
+      borderColor={`${COLORS.GREY}.150`}
     />
     <Button
       size='full'
       fontSize='18px'
       leftIcon={<MetaMaskIcon />}
-      colorScheme='orange'
+      colorScheme={COLORS.ORANGE}
     >
       Connect to MetaMask
     </Button>

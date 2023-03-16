@@ -13,7 +13,7 @@ import {
 import { Avatar } from '@components/index';
 
 // Enums
-import { SIZES } from '@enums';
+import { COLORS, SIZES } from '@enums';
 
 // Interface
 import { IUserDropDownMenu } from '@interfaces/userDropDown.interface';
@@ -41,7 +41,7 @@ export const UserDropDownMenu = ({ userInfo, ...rest }: IUserDropDownMenu) => {
         }
       >
         <Text
-          color='black'
+          color={COLORS.BLACK}
           fontSize='sm'
           lineHeight='base'
         >
@@ -49,7 +49,7 @@ export const UserDropDownMenu = ({ userInfo, ...rest }: IUserDropDownMenu) => {
         </Text>
         <Text
           textTransform='uppercase'
-          color='grey.700'
+          color={`${COLORS.GREY}.700`}
           lineHeight='base'
         >
           {userInfo?.job}
@@ -57,7 +57,7 @@ export const UserDropDownMenu = ({ userInfo, ...rest }: IUserDropDownMenu) => {
       </MenuButton>
       <MenuGroup>
         <MenuList
-          color='grey.400'
+          color={`${COLORS.GREY}.400`}
           boxShadow='md'
         >
           <MenuItem
@@ -67,7 +67,7 @@ export const UserDropDownMenu = ({ userInfo, ...rest }: IUserDropDownMenu) => {
             Profile &#38; account
           </MenuItem>
           <MenuDivider
-            borderColor='grey.50'
+            borderColor={`${COLORS.GREY}.50`}
             my='2.5'
           />
           <MenuItem onClick={() => {}}>Logout</MenuItem>

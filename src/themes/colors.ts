@@ -18,7 +18,8 @@ const CUSTOM_COLORS_PALETTE = {
   },
 
   lime: {
-    500: '#c1f29a'
+    400: '#c1f29a',
+    500: '#59ba0d'
   },
 
   green: {
@@ -31,15 +32,15 @@ const CUSTOM_COLORS_PALETTE = {
   },
 
   orange: {
-    200: '#faa981',
+    400: '#faa981',
     500: '#ff864b',
     600: '#dc702e',
     700: '#c55f21'
   },
 
   purple: {
-    200: '#b29cda',
-    400: '#9675cc'
+    400: '#b29cda',
+    500: '#9675cc'
   },
 
   // Keep using "gray" as default of chakra. Defined new "grey" color into our app

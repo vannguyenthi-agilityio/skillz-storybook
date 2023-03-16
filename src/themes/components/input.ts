@@ -1,3 +1,6 @@
+// Enums
+import { COLORS } from '@enums';
+
 const inputTheme = {
   sizes: {
     default: {
@@ -11,12 +14,12 @@ const inputTheme = {
     default: {
       field: {
         borderColor: 'transparent',
-        color: 'black',
+        color: `${COLORS.BLACK}`,
         _hover: {
           borderColor: 'transparent'
         },
         _invalid: {
-          borderColor: 'error.600',
+          borderColor: `${COLORS.RED}.600`,
           borderWidth: '1px'
         }
       }
@@ -25,7 +28,7 @@ const inputTheme = {
   baseStyle: {
     field: {
       _placeholder: {
-        color: 'grey.450'
+        color: `${COLORS.GREY}.450`
       }
     }
   }

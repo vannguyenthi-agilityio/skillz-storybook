@@ -7,7 +7,7 @@ import { IAvatar } from '@interfaces/avatar.interface';
 import { convertPxToRem } from '@helpers/common';
 
 // Enums
-import { SIZES } from '@enums';
+import { COLORS, SIZES } from '@enums';
 
 export const Avatar = ({ isActive = false, size = SIZES.MD, ...props }: IAvatar) => {
   const borderWidthMapping: {
@@ -47,7 +47,7 @@ export const Avatar = ({ isActive = false, size = SIZES.MD, ...props }: IAvatar)
         <AvatarBadge
           boxSize={boxSizeMapping[size]}
           borderWidth={borderWidthMapping[size]}
-          bg='green.300'
+          bg={`${COLORS.GREEN}.300`}
         />
       )}
     </AvatarChakra>

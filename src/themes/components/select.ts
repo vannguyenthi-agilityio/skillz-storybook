@@ -1,6 +1,9 @@
 // Helpers
 import { convertPxToRem } from '@helpers/common';
 
+// Enums
+import { COLORS } from '@enums';
+
 const selectTheme = {
   sizes: {
     default: {
@@ -16,27 +19,28 @@ const selectTheme = {
     default: {
       field: {
         borderColor: 'transparent',
-        color: 'black',
+        color: `${COLORS.BLACK}`,
         height: '100%',
         borderTopLeftRadius: convertPxToRem(7),
         borderBottomLeftRadius: convertPxToRem(7),
         backgroundColor: 'transparent',
         cursor: 'pointer',
         _hover: {
-          borderColor: 'blue.300'
+          borderColor: `${COLORS.BLUE}.300`
         },
         _disabled: {
           _hover: {
             cursor: 'default',
-            borderColor: 'grey.400'
+            borderColor: `${COLORS.GREY}.400`
           }
         },
         _invalid: {
-          border: 'error.600 1px solid'
+          borderWidth: '1px',
+          borderColor: `${COLORS.RED}.600`
         }
       },
       icon: {
-        color: 'black'
+        color: `${COLORS.BLACK}`
       }
     }
   }
