@@ -4,7 +4,6 @@ import { BellIcon, PeopleIcon, FailedIcon, SlackIcon, StarIcon, SuccessIcon } fr
 
 // Types
 import type { CardProps } from '@chakra-ui/react';
-import type { ReactElement } from 'react';
 
 // Enums
 import { CARD_STATUS, COLORS } from '@enums';
@@ -24,7 +23,7 @@ export interface IExamCard extends CardProps {
   dateTime: string;
   maxScore?: string | number;
   order: string | number;
-  icon: () => JSX.Element | ReactElement;
+  icon: JSX.Element;
 }
 
 const ExamCard = ({
@@ -40,7 +39,7 @@ const ExamCard = ({
   enroller,
   dateTime,
   order = 1,
-  icon = SlackIcon,
+  icon = <SlackIcon />,
   ...rest
 }: IExamCard) => {
   const renderInitialCard = () => (
@@ -215,10 +214,7 @@ const ExamCard = ({
             justify='center'
             fontSize='25px'
           >
-            <Icon
-              as={icon}
-              boxSize='32px'
-            />
+            {icon}
           </Flex>
         </HStack>
       </CardHeader>

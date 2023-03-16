@@ -18,7 +18,7 @@ const baseProps = {
   enroller: 1024,
   score: 50,
   order: 1,
-  icon: SlackIcon
+  icon: <SlackIcon />
 };
 
 const setup = (moreProps = {}) => {

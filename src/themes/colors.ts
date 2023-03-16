@@ -40,6 +40,7 @@ const CUSTOM_COLORS_PALETTE = {
 
   purple: {
     400: '#b29cda',
+    450: '#7d58c0',
     500: '#9675cc'
   },
 
@@ -54,6 +55,7 @@ const CUSTOM_COLORS_PALETTE = {
     500: '#999999',
     700: '#808080',
     800: '#333',
+    850: '#1a1a1a',
     900: '#141414'
   },
 
