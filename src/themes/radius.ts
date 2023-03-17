@@ -1,6 +1,6 @@
 import { convertPxToRem } from '@helpers/common';
 
-const radius = {
+const CUSTOM_RADIUS = {
   xs: convertPxToRem(5),
   sm: convertPxToRem(7),
   base: convertPxToRem(8),
@@ -12,4 +12,4 @@ const radius = {
   secondary: `${convertPxToRem(10)}, 0 0 ${convertPxToRem(10)}`
 };
 
-export default radius;
+export default CUSTOM_RADIUS;

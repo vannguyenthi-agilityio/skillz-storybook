@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonWithIconText Component type create should render correctly 1`] = `
+<button
+  class="chakra-button css-6pn8h7"
+  data-testid="btn-Create"
+  type="button"
+>
+  <div
+    aria-label="Icon Create"
+    class="css-lzc16y"
+  >
+    <svg
+      fill="none"
+      height="17"
+      viewBox="0 0 17 17"
+      width="17"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M7.68748 0.375011H9.40998V7.68751H16.7225V9.41001H9.40998V16.7225H7.68748V9.41001H0.374985V7.68751H7.68748V0.375011Z"
+        fill="black"
+      />
+    </svg>
+  </div>
+  <div
+    class="css-6t42k7"
+  >
+    <p
+      class="chakra-text css-168o111"
+    >
+      Create
+    </p>
+    <p
+      class="chakra-text css-8tawpc"
+    >
+      an examination
+    </p>
+  </div>
+</button>
+`;

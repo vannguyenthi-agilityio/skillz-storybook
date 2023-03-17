@@ -6,6 +6,7 @@ export default {
     '^@components': '<rootDir>/src/components',
     '^@pages': '<rootDir>/src/pages',
     '^@enums': '<rootDir>/src/enums/index',
+    '^@themes': '<rootDir>/src/themes/index',
     '^@constants': '<rootDir>/src/constants/index',
     '^@helpers': '<rootDir>/src/helpers/index',
     '^@utils': '<rootDir>/src/utils',

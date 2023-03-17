@@ -43,6 +43,16 @@ export default {
         outline: 'solid 1px #FFF',
         outlineOffset: -3
       }
+    },
+    ghost: {
+      _disabled: {
+        outline: 'none !important'
+      },
+      _active: {
+        outline: 'solid 8px white',
+        outlineOffset: -3,
+        boxShadow: 'sm'
+      }
     }
   },
   defaultProps: {

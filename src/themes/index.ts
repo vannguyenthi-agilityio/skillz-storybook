@@ -6,6 +6,7 @@ import CUSTOM_COLORS_PALETTE from './colors';
 
 import CUSTOM_FONTS from './fonts';
 import CUSTOM_SHADOWS from './shadows';
+import CUSTOM_RADIUS from './radius';
 import CUSTOM_FONTSIZES from './fontSizes';
 
 // Custom theme of Component
@@ -32,6 +33,7 @@ const CHAKRA_THEME = extendTheme({
   colors: CUSTOM_COLORS_PALETTE,
   fonts: CUSTOM_FONTS,
   shadows: CUSTOM_SHADOWS,
+  radii: CUSTOM_RADIUS,
   fontSizes: CUSTOM_FONTSIZES
 });
 

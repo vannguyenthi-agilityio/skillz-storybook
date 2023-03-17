@@ -6,7 +6,8 @@ const Fonts = () => (
       @font-face {
         font-family: 'primaryFont';
         font-display: swap;
-        src: url('/assets/fonts/HelveticaNeue.woff2') format('woff2'), url('/assets/fonts/HelveticaNeue.woff') format('woff'), url('/assets/fonts/HelveticaNeue.ttf') format('ttf');
+        font-style: normal;
+        src: local('Helvetica Neue'), url('https://fonts.cdnfonts.com/s/14188/HelveticaNeue-LightExt.woff') format('woff');
       }
       @font-face {
         font-family: 'boldFont';
