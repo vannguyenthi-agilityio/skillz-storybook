@@ -14,7 +14,8 @@ const CUSTOM_COLORS_PALETTE = {
 
   yellow: {
     300: '#f7d465',
-    500: '#cfab31'
+    500: '#cfab31',
+    750: '#8a6a00'
   },
 
   lime: {

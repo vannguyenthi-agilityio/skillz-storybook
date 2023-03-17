@@ -1,11 +1,13 @@
 interface StarLayoutIconProps {
   bgColor?: string;
+  w?: string;
+  h?: string;
 }
 
-export const StarLayoutIcon = ({ bgColor = 'black' }: StarLayoutIconProps) => (
+export const StarLayoutIcon = ({ bgColor = 'black', w = '28', h = '28' }: StarLayoutIconProps) => (
   <svg
-    width='28'
-    height='28'
+    width={w}
+    height={h}
     viewBox='0 0 28 28'
     fill='none'
     xmlns='http://www.w3.org/2000/svg'
